@@ -4,7 +4,7 @@
   "from": "2026-04-22",
   "to": "2026-10-14",
   "fromArchive": "https://web.archive.org/web/20260422115342/https://cursor.com/terms-of-service",
-  "reviewed": false,
+  "reviewed": true,
   "document": "Cursor Terms of Service",
   "summary": "Cursor removed mandatory arbitration and replaced it with litigation in Texas courts, added a limitations period for claims, and updated governing law and dispute resolution procedures.",
   "changes": [

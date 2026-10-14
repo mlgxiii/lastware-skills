@@ -4,7 +4,7 @@
   "from": "2026-04-01",
   "to": "2026-10-14",
   "fromArchive": "https://web.archive.org/web/20260401004729/https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
-  "reviewed": false,
+  "reviewed": true,
   "document": "GitHub Terms of Service",
   "summary": "New AI Features terms clarify how GitHub uses your data for AI training with opt-out options, define AI-related terms, update content ownership and license grants, and add detailed rules on private repository access and public repository content.",
   "changes": [
