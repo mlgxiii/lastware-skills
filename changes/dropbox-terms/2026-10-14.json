@@ -1,0 +1,41 @@
+{
+  "id": "dropbox-terms",
+  "name": "Dropbox Terms of Service",
+  "from": "2026-04-02",
+  "to": "2026-10-14",
+  "fromArchive": "http://web.archive.org/web/20260402190226/https://www.dropbox.com/terms",
+  "document": "Dropbox Terms of Service",
+  "summary": "Dropbox announces upcoming changes to its Terms of Service effective January 1, 2027, with a link to review the new terms.",
+  "changes": [
+    {
+      "ids": [
+        "c1"
+      ],
+      "kind": "added",
+      "impact": "low",
+      "title": "Announcement of upcoming Terms of Service change",
+      "what": "Dropbox informs users that its Terms of Service will change starting January 1, 2027.",
+      "before": "",
+      "after": "Dropbox’s Terms of Service will be changing effective January 1, 2027."
+    },
+    {
+      "ids": [
+        "c2"
+      ],
+      "kind": "added",
+      "impact": "low",
+      "title": "Link provided to review new Terms of Service",
+      "what": "Dropbox provides a clickable link for users to review the updated Terms of Service.",
+      "before": "",
+      "after": "Click here to review the new terms."
+    }
+  ],
+  "minor": [],
+  "check": {
+    "total": 2,
+    "explained": 2,
+    "minor": 0,
+    "problems": [],
+    "draftProblems": 0
+  }
+}

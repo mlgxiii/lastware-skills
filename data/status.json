@@ -1,0 +1,92 @@
+{
+  "anthropic-consumer-terms": {
+    "id": "anthropic-consumer-terms",
+    "name": "Anthropic Consumer Terms of Service",
+    "url": "https://www.anthropic.com/legal/consumer-terms",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 36061,
+    "since": "2026-10-14"
+  },
+  "atlassian-customer-agreement": {
+    "id": "atlassian-customer-agreement",
+    "name": "Atlassian Customer Agreement",
+    "url": "https://www.atlassian.com/legal/atlassian-customer-agreement",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 46720,
+    "since": "2026-10-14"
+  },
+  "cursor-terms": {
+    "id": "cursor-terms",
+    "name": "Cursor Terms of Service",
+    "url": "https://cursor.com/terms-of-service",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 61731,
+    "since": "2026-10-14"
+  },
+  "dropbox-terms": {
+    "id": "dropbox-terms",
+    "name": "Dropbox Terms of Service",
+    "url": "https://www.dropbox.com/terms",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 25421,
+    "since": "2026-10-14"
+  },
+  "eu-ai-act-faq": {
+    "id": "eu-ai-act-faq",
+    "name": "EU AI Act Service Desk FAQ",
+    "url": "https://ai-act-service-desk.ec.europa.eu/en/faq",
+    "kind": "regulation",
+    "checked": "2026-10-14",
+    "chars": 17123,
+    "since": "2026-10-14"
+  },
+  "figma-terms": {
+    "id": "figma-terms",
+    "name": "Figma Terms of Service",
+    "url": "https://www.figma.com/legal/tos/",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 36498,
+    "since": "2026-10-14"
+  },
+  "github-terms": {
+    "id": "github-terms",
+    "name": "GitHub Terms of Service",
+    "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 46231,
+    "since": "2026-10-14"
+  },
+  "google-terms": {
+    "id": "google-terms",
+    "name": "Google Terms of Service",
+    "url": "https://policies.google.com/terms?hl=en",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 37023,
+    "since": "2026-10-14"
+  },
+  "slack-user-terms": {
+    "id": "slack-user-terms",
+    "name": "Slack User Terms of Service",
+    "url": "https://slack.com/terms-of-service/user",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 13222,
+    "since": "2026-10-14"
+  },
+  "zoom-terms": {
+    "id": "zoom-terms",
+    "name": "Zoom Terms of Service",
+    "url": "https://www.zoom.com/en/trust/terms/",
+    "kind": "terms",
+    "checked": "2026-10-14",
+    "chars": 88020,
+    "since": "2026-10-14"
+  }
+}

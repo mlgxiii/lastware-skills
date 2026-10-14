@@ -1,0 +1,141 @@
+{
+  "id": "zoom-terms",
+  "from": "2026-04-01",
+  "to": "2026-10-14",
+  "fromArchive": "https://web.archive.org/web/20260401010433/https://www.zoom.com/en/trust/terms/",
+  "changes": [
+    {
+      "id": "c1",
+      "kind": "added",
+      "section": "By industry",
+      "before": "",
+      "after": "By industry"
+    },
+    {
+      "id": "c2",
+      "kind": "added",
+      "section": "By industry",
+      "before": "",
+      "after": "EducationFinancial ServicesProfessionalsGovernmentHealthcareManufacturingRetailBroadcast"
+    },
+    {
+      "id": "c3",
+      "kind": "added",
+      "section": "By audience",
+      "before": "",
+      "after": "By audience"
+    },
+    {
+      "id": "c4",
+      "kind": "added",
+      "section": "Small and midsize business Enterprise",
+      "before": "",
+      "after": "Small and midsize business Enterprise"
+    },
+    {
+      "id": "c5",
+      "kind": "added",
+      "section": "Small and midsize business Enterprise",
+      "before": "",
+      "after": "Information TechnologyCustomer ExperienceSales and RevenueFacilitiesMarketing and Events"
+    },
+    {
+      "id": "c6",
+      "kind": "added",
+      "section": "For Developer",
+      "before": "",
+      "after": "For Developer"
+    },
+    {
+      "id": "c7",
+      "kind": "added",
+      "section": "Build",
+      "before": "",
+      "after": "Build"
+    },
+    {
+      "id": "c8",
+      "kind": "added",
+      "section": "Video SDKCo-BrowseAI Services Integrate",
+      "before": "",
+      "after": "Video SDKCo-BrowseAI Services Integrate"
+    },
+    {
+      "id": "c9",
+      "kind": "added",
+      "section": "Zoom MarketplaceMCPRealtime Media StreamsAPIsZoom AppsMeeting SDK",
+      "before": "",
+      "after": "Zoom MarketplaceMCPRealtime Media StreamsAPIsZoom AppsMeeting SDK"
+    },
+    {
+      "id": "c10",
+      "kind": "added",
+      "section": "For partners",
+      "before": "",
+      "after": "For partners"
+    },
+    {
+      "id": "c11",
+      "kind": "added",
+      "section": "For partners",
+      "before": "",
+      "after": "Partner SolutionsFind a PartnerBecome a PartnerPartner PortalPartner Learning Center"
+    },
+    {
+      "id": "c12",
+      "kind": "added",
+      "section": "Select a language",
+      "before": "",
+      "after": "Select a language"
+    },
+    {
+      "id": "c13",
+      "kind": "added",
+      "section": "Install on desktop",
+      "before": "",
+      "after": "Install on desktop"
+    },
+    {
+      "id": "c14",
+      "kind": "added",
+      "section": "Download center",
+      "before": "",
+      "after": "Download center"
+    },
+    {
+      "id": "c15",
+      "kind": "added",
+      "section": "Get in touch",
+      "before": "",
+      "after": "Get in touch"
+    },
+    {
+      "id": "c16",
+      "kind": "added",
+      "section": "+1.888.799.9666",
+      "before": "",
+      "after": "+1.888.799.9666"
+    },
+    {
+      "id": "c17",
+      "kind": "added",
+      "section": "Contact Sales",
+      "before": "",
+      "after": "Contact Sales"
+    },
+    {
+      "id": "c18",
+      "kind": "added",
+      "section": "Download on the App Store",
+      "before": "",
+      "after": "Download on the App Store"
+    },
+    {
+      "id": "c19",
+      "kind": "added",
+      "section": "Get it on Google Play",
+      "before": "",
+      "after": "Get it on Google Play"
+    }
+  ]
+}

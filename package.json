@@ -1,0 +1,21 @@
+{
+  "name": "lastware-skills",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "generate": "tsx scripts/generate.ts",
+    "test": "node scripts/test.mjs",
+    "try": "tsx scripts/try.ts",
+    "watch": "node scripts/watch.mjs",
+    "explain": "tsx scripts/explain.ts",
+    "site": "node scripts/site.mjs",
+    "validate": "node scripts/validate-watch.mjs"
+  },
+  "devDependencies": {
+    "@ai-sdk/openai": "^3.0.127",
+    "@types/node": "^24.13.3",
+    "ai": "^6.0.306",
+    "tsx": "^4.23.15"
+  }
+}

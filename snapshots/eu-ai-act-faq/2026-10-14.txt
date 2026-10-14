@@ -1,0 +1,179 @@
+This list of FAQs has been compiled based on queries received during the AI Pact webinars as well as submissions from stakeholders. This list will be updated regularly and as needed.
+
+- Governance & Enforcement
+
+Who is responsible, and who is this aimed at?
+
+The AI Office, the European Data Protection Supervisor (EDPS) and the national competent authorities of the Member States are responsible for supervising and enforcing the AI Act.
+
+Market surveillance authorities supervise and enforce compliance with the rules for AI systems, including prohibitions and rules for high-risk AI.
+
+The EDPS acts as the designated market surveillance authority and notified body specifically responsible for supervising, monitoring, and enforcing compliance for AI systems put into service or used by European Union institutions, bodies, offices, and agencies.
+
+The Scientific Panel supports enforcement by supplying independent scientific and technical expertise. Enforcement is aimed at operators subject to the AI Act, including in particular providers and deployers of AI systems, as well as providers of general-purpose AI models.
+
+The AI Office has exclusive enforcement powers for certain AI systems and models, namely:
+
+- general-purpose AI models, including models with systemic risks;
+
+- AI systems based on general-purpose AI models, where the model and the system are developed by the same provider or a provider within the same undertaking as the provider of the underlying GPAI model;
+
+- AI systems that constitute, or are integrated into, very large online platforms or very large online search engines designated under Regulation (EU) 2022/2065 (Digital Services Act).
+
+- Governance & Enforcement
+
+When does enforcement start?
+
+Some enforcement powers of the AI Office and the authorities of the Member States will start to apply on 2 August 2026. From that date, the provisions on prohibited AI practices, transparency requirements for certain AI systems, and the rules for general-purpose AI (‘GPAI’) models will be enforceable.
+
+However, for certain provisions of the AI Act, enforcement powers will start to apply only when those provisions themselves become applicable. In particular:
+
+- Transparency obligations will enter into application and be enforceable from 2 August 2026, although providers of AI systems placed on the market before that date have until 2 December 2026 to comply with marking and detection obligation under Article 50(2).
+
+- The new prohibitions relating to the generation or manipulation of non-consensual intimate material and child sexual abuse material will apply from 2 December 2026.
+
+- The rules for high-risk AI systems set out in Annex III to the AI Act will apply from 2 December 2027 and the rules for high-risk AI systems embedded into regulated products will apply from 2 August 2028.
+
+- General-purpose AI models
+
+How are AI agents addressed within the AI Act?
+
+The term ‘AI agent’ is often used inconsistently in public debate, due in part to a blurry and still evolving demarcation between AI agents and other kinds of AI. Nevertheless, there is broad agreement that an AI agent must have the ability to receive and process input from their environment, and execute actions based on this processing that may interact with or affect their environment (e.g., issuing function calls). The term ‘Agentic AI’ is sometimes used to describe more sophisticated configurations that integrate multiple AI agents. Nevertheless, the precise interrelation between these two terms is still evolving.
+
+Typically, an AI agent will contain at least a general-purpose AI (GPAI) model, and constitute an AI system as it will usually have some form of interface, which is considered a system component (recital 97 AI Act). A more precise statement than ‘typically’ is difficult to make as the term AI agent is not legally defined and is used colloquially for different kinds of artefacts. Thus, while AI agents are not a separate category of AI under the AI Act, the definitions of an AI system in Article 3(1) AI Act and of a GPAI model in Article 3(63) AI Act are sufficient to cover AI agents. This means that the rules applicable to AI systems and GPAI models under the AI Act also apply to AI agents.
+
+Of the rules for AI systems, particularly relevant are the AI Act’s prohibitions of harmful manipulation and exploitation of vulnerabilities (Article 5(1), points (a) and (b), AI Act), compliance with which may require safeguards in the design and development of the AI agents to avoid prohibited practices that are reasonably likely to cause significant harm. From 2 August 2026 onwards, if the AI agent is intended to interact with natural persons or generate content, transparency rules will apply (Article 50 AI Act) – a Code of Practice to operationalise these rules was recently published. Furthermore, from 2 Dec 2027 respective 2 Aug 2028 onwards, if the AI agent classifies as a high-risk AI system, it is also subject to additional requirements that ensure its safety and trustworthiness for its intended usage (Chapter III AI Act).
+
+As regards the GPAI models typically underlying AI agents, factors like the level of autonomy or tool use of the model can be decisive in the designation of the model as a model with systemic risk (Article 51(1)(b), Annex XIII, point (e), AI Act). Moreover, providers of GPAI models with systemic risk are subject to risk management obligations, which include considerations regarding the model’s autonomous capabilities and its agentic use (operationalised for example in Measure 5.1, point 7, Appendix 1.3.1, points (5) and (7), Appendix 1.3.3, points (1), (4), and (12), or Appendix 3.2, second paragraph, Safety and Security Chapter of the GPAI Code of Practice).
+
+Given that developments related to AI agents are recent and fast evolving, the European Commission’s regulatory considerations are only preliminary at this stage. The AI Office continues to closely monitor these developments and, if need be, will consider developing strategies to address the potential risks posed by AI agents. For example, the AI Office’s recent call for tenders on technical assistance for AI safety includes a lot dedicated to the evaluation of the safety and security of AI agents.
+
+- General-purpose AI models
+
+The Commissions’ enforcement powers related to AI Act obligations for providers of the most advanced models enter into application on 2 August 2026. What will change then?
+
+The AI Act foresees a one-year period, from 2 August 2025, in which providers of the most advanced models must comply with their obligations before the Commission’s enforcement powers enter into application on 2 August 2026. Providers must, for instance, notify the Commission when they know they are developing one of the most advanced models. They must also assess and mitigate systemic risks from those models and most of the relevant providers have signed and are implementing the GPAI Code of Practice to this end. Since last year, the Commission’s AI Office has therefore received information and held technical compliance dialogues with providers to improve their practices to assess and mitigate systemic risks.
+
+The AI Office views these technical compliance dialogues as a first tool of choice to assess compliance and clarify questions to support providers’ efforts. So, in one important way, nothing changes in August – the AI Office will continue and, if anything, intensify, the ongoing technical compliance dialogues.
+
+In preparation for 2 August 2026, the AI Office has also established the structures and competencies needed for using enforcement powers. The powers include requesting information, requesting access to a model for evaluations, requiring risk mitigation measures, and issuing fines of up to 3% of global annual turnover or requesting a provider to restrict the making available on the market, withdraw or recall the model. The AI Office may use these powers in cases where technical compliance dialogues are not sufficient.
+
+- Digital Omnibus
+
+What are the new timelines proposed?
+
+The proposal acknowledges the challenge that the delay of standards and other support tools cause for the implementation of the AI Act.
+
+The timeline for the high-risk AI rules is aligned to the availability of standards and other support tools. Once the Commission confirms these are sufficiently available, the rules will start to apply after a transition period.
+
+This flexibility has an end date: the rules for high-risk AI in sensitive areas like employment and law enforcement (Annex III) will in any case apply maximum 16 months later than originally envisaged, the rules for high-risk AI embedded in products like medical devices (Annex I) will apply a maximum 12 months later.
+
+The proposal also suggests a transition period of 6 months for providers who need to retroactively include technical solutions into their generative AI systems to make them detectable.
+
+- Digital Omnibus
+
+How will these changes benefit to businesses?
+
+According to the Commission’s first estimations, the proposed measures on AI are expected to reduce compliance costs for businesses throughout the EU.
+
+At the same time, by extending benefits granted to SMEs to include SMCs, the Commission is making implementation easier for an additional 8,250 companies in Europe.
+
+Overall, the proposals presented by the Commission will help businesses meet their obligations. They also open up more opportunities to innovate in the EU, further facilitating the roll-out of the regulatory framework that is designed to create a single market for trustworthy AI.
+
+- Digital Omnibus
+
+What are the main changes proposed to the AI Act?
+
+The Commission is committed to a clear, simple and innovation friendly implementation of the AI Act, as set out in the AI Continent Action Plan and the Apply AI Strategy. Commission’s proposal brings the AI Act in line with this approach by:
+
+Linking when rules apply to the availability of support
+
+- Linking the application of the rules for high-risk AI to the availability of support tools like standards. The Commission is adjusting the timeline for the application of high-risk rules to a maximum of 16 months.
+
+Introducing simplification:
+
+- Extending certain simplified modalities of fulfilling the legal obligations from SMEs to small mid cap companies (SMCs), such as simplified technical documentation;
+
+- Requiring the Commission and Member States to foster AI literacy, and ensure continuous support to companies by building on existing efforts (such as the AI Office’s repository of AI literacy practices) instead of enforcing unspecified obligations on operators, while keeping training obligations for high-risk deployers in place remain.
+
+- Removing the prescription of a harmonised post-market monitoring plan, giving businesses more flexibility;
+
+- Reducing the registration burden for AI systems used in high-risk areas for tasks that are not considered high-risk.
+
+Improving the effectiveness of the AI Act’s governance:
+
+- Centralising the oversight of AI systems built on general-purpose AI models with the AI Office, to reduce governance fragmentation for developers of these models and systems;
+
+- Concentrating the oversight of AI embedded in very large online platforms and search engines at Commission level by assigning this oversight to the AI Office.
+
+Extending measures in support compliance:
+
+- Allowing providers and deployers to process special categories of personal data for ensuring bias detection and correction, subject to appropriate safeguards;
+
+- Broadening the use of AI regulatory sandboxes and real-world testing so more innovators can benefit from these tools. This includes setting up an EU-level regulatory sandbox from 2028 to support real-world testing.
+
+Improving the AI Act’s procedures and operation:
+
+- Clarifying the interplay between the AI Act and other EU laws. Simplifying procedures to foster the timely availability of conformity assessment bodies.
+
+- Digital Omnibus
+
+Why is the European Commission proposing to amend the AI Act?
+
+The AI Act entered into force on 1 August 2024. It follows a staggered entry into application, with some parts already applicable such as certain prohibitions, AI literacy, and rules for general-purpose AI models. Other parts of the Act are set to apply on 2 August 2026 and 2 August 2027.
+
+This progressive roll-out allows us to build on the experience gathered in applying the first part of the rules. The Commission is committed to continuously learn and stepping up its efforts. This is particularly important in the context of a fast-evolving technology like AI.
+
+Stakeholder consultations throughout 2025 revealed implementation challenges that need to be addressed so that the AI Act can be successfully rolled-out. This proposal puts forwards legislative amendments to that effect and complements ongoing efforts to facilitate compliance with the AI Act, like the launch of an AI Act Service Desk.
+
+- Governance & Enforcement
+
+What is enforcement, and why does it matter?
+
+Enforcement refers to the set of powers and procedures used to ensure that the AI Act is applied in practice, effectively supervised, and complied with by the operators concerned.
+
+The AI Act’s enforcement framework turns the rules into practical action. It helps make sure that operators developing or using AI in the EU follow the law in a consistent and effective way, with supervision and corrective powers where needed.
+
+In practice, enforcement includes:
+
+- monitoring compliance with the AI Act,
+
+- gathering the information needed to assess whether rules are being followed,
+
+- requiring corrective action where providers of GPAI models or AI systems do not comply with the rules,
+
+- using stronger corrective measures where necessary, including restrictions to the availability of GPAI models and AI systems.
+
+- Governance & Enforcement
+
+What are the entry channels for complaints?
+
+- Complaints Tool for AI Systems
+
+The AI Act Complaints Tool for AI Systems is a channel made available by the AI Office under Article 85 of the AI Act for natural and legal persons who wish to submit a complaint concerning alleged infringements to the AI Act for AI systems falling within its exclusive competence.
+
+Under Article 75(1) of the AI Act, the AI Office has exclusive competence for two main categories of AI systems:
+
+- GPAI-based AI systems, where the general-purpose AI model and the AI system are provided by the same provider or a provider within the same undertaking as the provider of the underlying GPAI model. This does not include systems covered by Annex I, Annex III point 2, or Annex III point 8 of the AI Act, as well as AI systems provided by law enforcement authorities, border management authorities and financial institutions, insofar as those AI systems fall under Article 74(6). The AI systems excluded remain in the enforcement remit of national competent authorities.
+
+- AI systems embedded in, or constituting, very large online search engines (VLOSEs) or very large online platforms (VLOPs) within the meaning of the Digital Services Act.
+
+LINK: AI Act Complaints Tool for AI Systems
+
+- Whistleblower Tool
+
+The AI Act Whistleblower Tool, empowers individuals who are professionally connected to an AI provider to securely submit a report and contribute directly to make AI in Europe safe transparent, and trustworthy.
+
+Whistleblowers play a vital role in identifying potential violations of the law that could endanger fundamental rights, health, or public trust, and which might otherwise go undetected. By reporting potential violations, whistleblowers can support the AI Office in detecting them early on, thereby contributing to the safe and transparent development of AI technologies.
+
+The AI Act Whistleblower Tool allows relevant individuals to report harmful practices by providers of GPAI AI models and certain AI systems under the AI Office’s remit. You can submit your report anonymously in any EU language together with supporting documents using the secure inbox in the tool. The inbox also enables whistleblowers to stay up to date on the progress of their report, answer follow-up questions while remaining anonymous.
+
+LINK: AI Act Whistleblower Tool
+
+- Downstream providers dedicated channel for complaints related to GPAI models
+
+Under the AI Act, downstream providers of an AI system built on a general-purpose AI model may lodge a complaint with the Commission where they consider that a provider of a general-purpose AI model has infringed Articles 53 to 55 of the AI Act, which set out the relevant obligations for such models.
+
+The Commission will examine the information received and all complaints will be dealt in a confidential manner. However, submission of a complaint does not automatically lead to the opening of proceedings, as the Commission retains discretion in how it prioritises and pursues enforcement action.
+
+Complaints concerning infringement of the AI Act by the providers or deployers of AI systems, should be addressed through the dedicated channel, which contains a voluntary complaint template.

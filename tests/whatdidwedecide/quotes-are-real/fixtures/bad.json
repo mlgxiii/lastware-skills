@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "kind": "decision",
+      "text": "Launch on the 14th.",
+      "quote": "We agreed to launch on the 14th."
+    },
+    {
+      "kind": "action",
+      "text": "Sam finishes pricing by Wednesday.",
+      "quote": "I'll finish pricing by Wednesday."
+    },
+    {
+      "kind": "open",
+      "text": "Whether to launch on Product Hunt.",
+      "quote": "Are we doing a Product Hunt launch too?"
+    },
+    {
+      "kind": "disagreement",
+      "text": "Annual-only vs monthly pricing.",
+      "quote": "I disagree, monthly converts better for us."
+    }
+  ]
+}

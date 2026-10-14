@@ -1,0 +1,869 @@
+{
+  "id": "github-terms",
+  "from": "2026-04-01",
+  "to": "2026-10-14",
+  "fromArchive": "https://web.archive.org/web/20260401004729/https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "changes": [
+    {
+      "id": "c1",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "AI Features, Training, and Your Data These are the terms that apply to GitHub Copilot and other AI features, including how your data may be used for development and improvement of the artificial intelligence and machine learning models, and the controls available to you."
+    },
+    {
+      "id": "c2",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "K."
+    },
+    {
+      "id": "c3",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "K.",
+      "after": ""
+    },
+    {
+      "id": "c4",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "L."
+    },
+    {
+      "id": "c5",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "L.",
+      "after": ""
+    },
+    {
+      "id": "c6",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "M."
+    },
+    {
+      "id": "c7",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "M.",
+      "after": ""
+    },
+    {
+      "id": "c8",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "N."
+    },
+    {
+      "id": "c9",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "N.",
+      "after": ""
+    },
+    {
+      "id": "c10",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "O."
+    },
+    {
+      "id": "c11",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "O.",
+      "after": ""
+    },
+    {
+      "id": "c12",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "P."
+    },
+    {
+      "id": "c13",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "P.",
+      "after": ""
+    },
+    {
+      "id": "c14",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "Q."
+    },
+    {
+      "id": "c15",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "Q.",
+      "after": ""
+    },
+    {
+      "id": "c16",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "R."
+    },
+    {
+      "id": "c17",
+      "kind": "removed",
+      "section": "Summary",
+      "before": "R.",
+      "after": ""
+    },
+    {
+      "id": "c18",
+      "kind": "added",
+      "section": "Summary",
+      "before": "",
+      "after": "S."
+    },
+    {
+      "id": "c19",
+      "kind": "removed",
+      "section": "Effective date: November 16, 2020",
+      "before": "Effective date: November 16, 2020",
+      "after": ""
+    },
+    {
+      "id": "c20",
+      "kind": "added",
+      "section": "Effective date: April 27, 2026",
+      "before": "",
+      "after": "Effective date: April 27, 2026"
+    },
+    {
+      "id": "c21",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "- \"AI Feature\" means any feature of GitHub or our Affiliates that uses machine learning or artificial intelligence to generate Output, including GitHub Copilot, Copilot Autofix, and any other feature identified as using machine learning or artificial intelligence in our documentation."
+    },
+    {
+      "id": "c22",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "- “Affiliate” means any entity that directly or indirectly controls, is controlled by, or is under common control with a party, where \"control\" means having more than fifty percent (50%) ownership or the right to direct the management of the entity."
+    },
+    {
+      "id": "c23",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "For the avoidance of doubt, Microsoft is an Affiliate of GitHub."
+    },
+    {
+      "id": "c24",
+      "kind": "removed",
+      "section": "A. Definitions",
+      "before": "- “Content” refers to content featured or displayed through the Website, including without limitation code, text, data, articles, images, photographs, graphics, software, applications, packages, designs, features, and other materials that are available on the Website or otherwise available through the Service.",
+      "after": ""
+    },
+    {
+      "id": "c25",
+      "kind": "removed",
+      "section": "A. Definitions",
+      "before": "\"Content\" also includes Services.",
+      "after": ""
+    },
+    {
+      "id": "c26",
+      "kind": "removed",
+      "section": "A. Definitions",
+      "before": "“User-Generated Content” is Content, written or otherwise, created or uploaded by our Users.",
+      "after": ""
+    },
+    {
+      "id": "c27",
+      "kind": "removed",
+      "section": "A. Definitions",
+      "before": "\"Your Content\" is Content that you create or own.",
+      "after": ""
+    },
+    {
+      "id": "c28",
+      "kind": "changed",
+      "section": "A. Definitions",
+      "before": "- “GitHub,” “We,” and “Us” refer to GitHub, Inc., as well as our affiliates, directors, subsidiaries, contractors, licensors, officers, agents, and employees.",
+      "after": "- “GitHub,” “We,” and “Us” refer to GitHub, Inc., as well as our directors, subsidiaries, contractors, licensors, officers, agents, and employees."
+    },
+    {
+      "id": "c29",
+      "kind": "changed",
+      "section": "A. Definitions",
+      "before": "- The “Service” refers to the applications, software, products, and services provided by GitHub, including any Beta Previews.",
+      "after": "- The “Service” refers to the applications, software, products, and services provided by GitHub, including through the Website and any Beta Previews."
+    },
+    {
+      "id": "c30",
+      "kind": "changed",
+      "section": "A. Definitions",
+      "before": "- “The User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the Account; or that directs the use of the Account in the performance of its functions.",
+      "after": "- “User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the Account; or that directs the use of the Account in the performance of its functions."
+    },
+    {
+      "id": "c31",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "- \"Content\" means code, text, data, documentation, images, graphics, software, packages, and other materials made available through the Service."
+    },
+    {
+      "id": "c32",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "- “Input” means any content or context provided to an AI Feature, including prompts, attachments, code in your workspace, and conversation history."
+    },
+    {
+      "id": "c33",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "- \"Output\" means responses and suggestions, including code or other material, generated by an AI Feature."
+    },
+    {
+      "id": "c34",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "- \"User-Generated Content\" means Content that you or other users upload, submit, or create through the Service."
+    },
+    {
+      "id": "c35",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "- \"Your Content\" means User-Generated Content that you upload, submit, or create, including your modifications to Content you have forked or cloned."
+    },
+    {
+      "id": "c36",
+      "kind": "added",
+      "section": "A. Definitions",
+      "before": "",
+      "after": "It does not include the underlying Content created by others."
+    },
+    {
+      "id": "c37",
+      "kind": "changed",
+      "section": "3. Account Requirements",
+      "before": "We have a few simple rules for Personal Accounts on GitHub's Service.",
+      "after": "We have a few simple rules for Accounts on GitHub's Service."
+    },
+    {
+      "id": "c38",
+      "kind": "changed",
+      "section": "1. Responsibility for User-Generated Content",
+      "before": "You may create or upload User-Generated Content while using the Service.",
+      "after": "This includes Content you post, upload, or make available through the Service."
+    },
+    {
+      "id": "c39",
+      "kind": "removed",
+      "section": "1. Responsibility for User-Generated Content",
+      "before": "You are solely responsible for the content of, and for any harm resulting from, any User-Generated Content that you post, upload, link to or otherwise make available via the Service, regardless of the form of that Content.",
+      "after": ""
+    },
+    {
+      "id": "c40",
+      "kind": "changed",
+      "section": "1. Responsibility for User-Generated Content",
+      "before": "We are not responsible for any public display or misuse of your User-Generated Content.",
+      "after": "We are not responsible for any public display or misuse of Your Content."
+    },
+    {
+      "id": "c41",
+      "kind": "added",
+      "section": "1. Responsibility for User-Generated Content",
+      "before": "",
+      "after": "You are responsible for Your Content and any harm resulting from it."
+    },
+    {
+      "id": "c42",
+      "kind": "changed",
+      "section": "2. GitHub May Remove Content",
+      "before": "We have the right to refuse or remove any User-Generated Content that, in our sole discretion, violates any laws or GitHub terms or policies.",
+      "after": "We may refuse or remove User-Generated Content that violates applicable law or our terms and policies."
+    },
+    {
+      "id": "c43",
+      "kind": "changed",
+      "section": "2. GitHub May Remove Content",
+      "before": "User-Generated Content displayed on GitHub Mobile may be subject to mobile app stores' additional terms.",
+      "after": "Content displayed on GitHub Mobile may be subject to app store terms."
+    },
+    {
+      "id": "c44",
+      "kind": "changed",
+      "section": "3. Ownership and License Grants",
+      "before": "3. Ownership of Content, Right to Post, and License Grants",
+      "after": "3. Ownership and License Grants"
+    },
+    {
+      "id": "c45",
+      "kind": "removed",
+      "section": "3. Ownership of Content, Right to Post, and License Grants",
+      "before": "You retain ownership of and responsibility for Your Content.",
+      "after": ""
+    },
+    {
+      "id": "c46",
+      "kind": "changed",
+      "section": "3. Ownership and License Grants",
+      "before": "If you're posting anything you did not create yourself or do not own the rights to, you agree that you are responsible for any Content you post; that you will only submit Content that you have the right to post; and that you will fully comply with any third party licenses relating to Content you post.",
+      "after": "If you post Content you did not create, you are responsible for ensuring you have the right to post it and for complying with any applicable licenses."
+    },
+    {
+      "id": "c47",
+      "kind": "removed",
+      "section": "3. Ownership of Content, Right to Post, and License Grants",
+      "before": "Because you retain ownership of and responsibility for Your Content, we need you to grant us — and other GitHub Users — certain legal permissions, listed in Sections D.4 — D.7.",
+      "after": ""
+    },
+    {
+      "id": "c48",
+      "kind": "changed",
+      "section": "3. Ownership and License Grants",
+      "before": "These license grants apply to Your Content.",
+      "after": "These licenses apply to Your Content."
+    },
+    {
+      "id": "c49",
+      "kind": "changed",
+      "section": "3. Ownership and License Grants",
+      "before": "If you upload Content that already comes with a license granting GitHub the permissions we need to run our Service, no additional license is required.",
+      "after": "If Your Content already includes a license granting us the permissions we need, no additional license is required."
+    },
+    {
+      "id": "c50",
+      "kind": "removed",
+      "section": "3. Ownership of Content, Right to Post, and License Grants",
+      "before": "You understand that you will not receive any payment for any of the rights granted in Sections D.4 — D.7.",
+      "after": ""
+    },
+    {
+      "id": "c51",
+      "kind": "changed",
+      "section": "3. Ownership and License Grants",
+      "before": "The licenses you grant to us will end when you remove Your Content from our servers, unless other Users have forked it.",
+      "after": "These licenses end when you remove Your Content, unless other Users have forked it."
+    },
+    {
+      "id": "c52",
+      "kind": "added",
+      "section": "2. GitHub May Remove Content",
+      "before": "",
+      "after": "We access private repositories only as described in Section E."
+    },
+    {
+      "id": "c53",
+      "kind": "added",
+      "section": "3. Ownership and License Grants",
+      "before": "",
+      "after": "You own Your Content."
+    },
+    {
+      "id": "c54",
+      "kind": "added",
+      "section": "3. Ownership and License Grants",
+      "before": "",
+      "after": "You grant us and other Users the licenses in Sections D.4–D.8."
+    },
+    {
+      "id": "c55",
+      "kind": "added",
+      "section": "3. Ownership and License Grants",
+      "before": "",
+      "after": "You will not receive payment for these rights."
+    },
+    {
+      "id": "c56",
+      "kind": "removed",
+      "section": "4. License Grant to Us",
+      "before": "We need the legal right to do things like host Your Content, publish it, and share it.",
+      "after": ""
+    },
+    {
+      "id": "c57",
+      "kind": "changed",
+      "section": "4. License Grant to Us",
+      "before": "You grant us and our legal successors the right to store, archive, parse, and display Your Content, and make incidental copies, as necessary to provide the Service, including improving the Service over time.",
+      "after": "You grant GitHub and our Affiliates the right to store, host, archive, parse, display, and make copies of Your Content as necessary to provide, develop, and improve the Service, including by training AI Features, and for the purpose of training, developing, and improving artificial intelligence and machine learning models and technologies of our Affiliates."
+    },
+    {
+      "id": "c58",
+      "kind": "removed",
+      "section": "4. License Grant to Us",
+      "before": "This license does not grant GitHub the right to sell Your Content.",
+      "after": ""
+    },
+    {
+      "id": "c59",
+      "kind": "removed",
+      "section": "4. License Grant to Us",
+      "before": "It also does not grant GitHub the right to otherwise distribute or use Your Content outside of our provision of the Service, except that as part of the right to archive Your Content, GitHub may permit our partners to store and archive Your Content in public repositories in connection with the GitHub Arctic Code Vault and GitHub Archive Program.",
+      "after": ""
+    },
+    {
+      "id": "c60",
+      "kind": "added",
+      "section": "4. License Grant to Us",
+      "before": "",
+      "after": "For the avoidance of doubt, use of Your Content to develop, train, and improve artificial intelligence and machine learning models and technologies of GitHub and our Affiliates is within the scope of this license and does not constitute a sale or other restricted transfer of Your Content."
+    },
+    {
+      "id": "c61",
+      "kind": "changed",
+      "section": "5. License Grant to Other Users",
+      "before": "Any User-Generated Content you post publicly, including issues, comments, and contributions to other Users' repositories, may be viewed by others.",
+      "after": "Your Content that you post publicly, including issues, comments, and contributions to other Users' repositories, may be viewed by others."
+    },
+    {
+      "id": "c62",
+      "kind": "changed",
+      "section": "5. License Grant to Other Users",
+      "before": "By setting your repositories to be viewed publicly, you agree to allow others to view and \"fork\" your repositories (this means that others may make their own copies of Content from your repositories in repositories they control).",
+      "after": "By setting your repositories to be viewed publicly, you agree to allow others to view and \"fork\" your repositories (this means that others may make their own copies within the Service in repositories they control)."
+    },
+    {
+      "id": "c63",
+      "kind": "changed",
+      "section": "5. License Grant to Other Users",
+      "before": "If you set your pages and repositories to be viewed publicly, you grant each User of GitHub a nonexclusive, worldwide license to use, display, and perform Your Content through the GitHub Service and to reproduce Your Content solely on GitHub as permitted through GitHub's functionality (for example, through forking).",
+      "after": "By making a repository public, you grant other Users a nonexclusive, worldwide license to use, display, perform and reproduce (by forking) Your Content through the Service as permitted by GitHub's functionality."
+    },
+    {
+      "id": "c64",
+      "kind": "changed",
+      "section": "5. License Grant to Other Users",
+      "before": "You may grant further rights if you adopt a license.",
+      "after": "You may grant additional rights by adopting a license."
+    },
+    {
+      "id": "c65",
+      "kind": "changed",
+      "section": "5. License Grant to Other Users",
+      "before": "If you are uploading Content you did not create or own, you are responsible for ensuring that the Content you upload is licensed under terms that grant these permissions to other GitHub Users.",
+      "after": "If you post Content you did not create or own, you are responsible for ensuring it is licensed under terms that permit these uses."
+    },
+    {
+      "id": "c66",
+      "kind": "changed",
+      "section": "7. Moral Rights",
+      "before": "However, you waive these rights and agree not to assert them against us, to enable us to reasonably exercise the rights granted in Section D.4, but not otherwise.",
+      "after": "However, you waive these rights and agree not to assert them against us or our Affiliates, to enable GitHub and our Affiliates to reasonably exercise the rights granted in Section D.4, but not otherwise."
+    },
+    {
+      "id": "c67",
+      "kind": "changed",
+      "section": "9. Access Reciprocity",
+      "before": "8. Access Reciprocity",
+      "after": "9. Access Reciprocity"
+    },
+    {
+      "id": "c68",
+      "kind": "added",
+      "section": "8. Public Repositories and Lawful Access",
+      "before": "",
+      "after": "8. Public Repositories and Lawful Access"
+    },
+    {
+      "id": "c69",
+      "kind": "added",
+      "section": "8. Public Repositories and Lawful Access",
+      "before": "",
+      "after": "By choosing to contribute Content to a public repository, you are choosing to and directing us to make such Content accessible to everyone on the internet."
+    },
+    {
+      "id": "c70",
+      "kind": "added",
+      "section": "8. Public Repositories and Lawful Access",
+      "before": "",
+      "after": "Unless specifically set forth herein, these Terms do not restrict lawful access to or use of the contents of public repositories by third parties, or by GitHub or its Affiliates."
+    },
+    {
+      "id": "c71",
+      "kind": "changed",
+      "section": "9. Access Reciprocity",
+      "before": "This Section D.8 does not apply to Access solely for the purpose of academic research or if, on the date you Access the Content, the number of monthly active users of the products or services made available by you is less than 700 million in the preceding calendar month.",
+      "after": "This Section D.9 does not apply to Access solely for the purpose of academic research or if, on the date you Access the Content, the number of monthly active users of the products or services made available by you is less than 700 million in the preceding calendar month."
+    },
+    {
+      "id": "c72",
+      "kind": "changed",
+      "section": "E. Private Repositories",
+      "before": "Short version: We treat the content of private repositories as confidential, and we only access it as described in our Privacy Statement—for security purposes, to assist the repository owner with a support matter, to maintain the integrity of the Service, to comply with our legal obligations, if we have reason to believe the contents are in violation of the law, or with your consent.",
+      "after": "Short version: We treat the content of private repositories as confidential, and we only access it as described in Section E.3 below—for security purposes, to assist the repository owner with a support matter, to maintain the integrity of the Service, to comply with our legal obligations, if we have reason to believe the contents are in violation of the law, or with your consent."
+    },
+    {
+      "id": "c73",
+      "kind": "removed",
+      "section": "3. Access",
+      "before": "GitHub personnel may only access the content of your private repositories in the situations described in our Privacy Statement.",
+      "after": ""
+    },
+    {
+      "id": "c74",
+      "kind": "added",
+      "section": "3. Access",
+      "before": "",
+      "after": "You control access to the content of your private repositories."
+    },
+    {
+      "id": "c75",
+      "kind": "added",
+      "section": "3. Access",
+      "before": "",
+      "after": "GitHub considers the contents of private repositories to be confidential to you, as set forth in Section E.2, and GitHub personnel will not access private repository content without your consent except in the following circumstances:"
+    },
+    {
+      "id": "c76",
+      "kind": "added",
+      "section": "3. Access",
+      "before": "",
+      "after": "- for security purposes;"
+    },
+    {
+      "id": "c77",
+      "kind": "added",
+      "section": "3. Access",
+      "before": "",
+      "after": "- for automated scanning or manual review for known vulnerabilities, active malware, or other content known to violate our Terms of Service;"
+    },
+    {
+      "id": "c78",
+      "kind": "added",
+      "section": "3. Access",
+      "before": "",
+      "after": "- to assist the repository owner with a support matter;"
+    },
+    {
+      "id": "c79",
+      "kind": "added",
+      "section": "- to maintain the integrity of the Service; or",
+      "before": "",
+      "after": "- to maintain the integrity of the Service; or"
+    },
+    {
+      "id": "c80",
+      "kind": "added",
+      "section": "- to maintain the integrity of the Service; or",
+      "before": "",
+      "after": "- to comply with our legal obligations if we have reason to believe the contents are in violation of the law."
+    },
+    {
+      "id": "c81",
+      "kind": "added",
+      "section": "- to maintain the integrity of the Service; or",
+      "before": "",
+      "after": "- If you provide your private repository content as Input to AI Features, we may use that Input to provide, develop, train, and improve the Service, including AI Features."
+    },
+    {
+      "id": "c82",
+      "kind": "added",
+      "section": "- to maintain the integrity of the Service; or",
+      "before": "",
+      "after": "Your ability to opt out under Section J.3 applies to this use of private repository content."
+    },
+    {
+      "id": "c83",
+      "kind": "added",
+      "section": "- to maintain the integrity of the Service; or",
+      "before": "",
+      "after": "We will not otherwise use your private repository contents to develop or improve the Service."
+    },
+    {
+      "id": "c84",
+      "kind": "changed",
+      "section": "H. API Terms",
+      "before": "Short version: You agree to these Terms of Service, plus this Section H, when using any of GitHub's APIs (Application Provider Interface), including use of the API through a third party product that accesses GitHub.",
+      "after": "Short version: You agree to these Terms of Service, plus this Section H, when using any of GitHub's APIs (Application Programming Interface), including use of the API through a third party product that accesses GitHub."
+    },
+    {
+      "id": "c85",
+      "kind": "changed",
+      "section": "K. Beta Previews",
+      "before": "J. Beta Previews",
+      "after": "K. Beta Previews"
+    },
+    {
+      "id": "c86",
+      "kind": "added",
+      "section": "J. AI Features, Training, and Your Data",
+      "before": "",
+      "after": "J. AI Features, Training, and Your Data"
+    },
+    {
+      "id": "c87",
+      "kind": "added",
+      "section": "1. Applicability",
+      "before": "",
+      "after": "1. Applicability"
+    },
+    {
+      "id": "c88",
+      "kind": "added",
+      "section": "1. Applicability",
+      "before": "",
+      "after": "This section applies to all AI Features unless a specific feature has additional terms that expressly modify them."
+    },
+    {
+      "id": "c89",
+      "kind": "added",
+      "section": "1. Applicability",
+      "before": "",
+      "after": "The training and data-use provisions in Section J.3 apply only to individual licenses."
+    },
+    {
+      "id": "c90",
+      "kind": "added",
+      "section": "1. Applicability",
+      "before": "",
+      "after": "If your use of the Service is governed by a GitHub Customer Agreement or volume licensing agreement, those agreements govern the use of your data in connection with AI Features and Section J.3 does not apply to you."
+    },
+    {
+      "id": "c91",
+      "kind": "added",
+      "section": "2. Ownership",
+      "before": "",
+      "after": "2. Ownership"
+    },
+    {
+      "id": "c92",
+      "kind": "added",
+      "section": "2. Ownership",
+      "before": "",
+      "after": "GitHub does not claim ownership of your Input or Output."
+    },
+    {
+      "id": "c93",
+      "kind": "added",
+      "section": "2. Ownership",
+      "before": "",
+      "after": "Output may contain material that resembles code or content in the model's training data or that is subject to third-party copyrights or open source license terms."
+    },
+    {
+      "id": "c94",
+      "kind": "added",
+      "section": "2. Ownership",
+      "before": "",
+      "after": "You are responsible for determining whether your use of Output requires a third-party license and for complying with any such license."
+    },
+    {
+      "id": "c95",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "3. Development and Improvement Using Your Input and Output"
+    },
+    {
+      "id": "c96",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "We use your Inputs to generate Outputs and provide the AI Features."
+    },
+    {
+      "id": "c97",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "You also grant GitHub and its Affiliates a license to collect and use your Inputs and Outputs to develop, train and improve artificial intelligence and machine learning models and technologies including those that power AI Features, unless (a) you opt out through your account settings, or (b) your use of the Service is governed by a GitHub Customer Agreement or volume licensing agreement."
+    },
+    {
+      "id": "c98",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "If you opt out, GitHub will not collect or use your Inputs and Outputs for the purposes described in this paragraph from the effective date of your opt-out going forward."
+    },
+    {
+      "id": "c99",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "Unless you opt out, GitHub's Affiliates may use your Inputs and Outputs under this license in accordance with their applicable privacy and contractual obligations."
+    },
+    {
+      "id": "c100",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "This license does not, however, permit GitHub or its Affiliates to share your Inputs or Outputs with third-party AI model providers for their own independent model training purposes."
+    },
+    {
+      "id": "c101",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "The license in this Section J.3 is in addition to, and does not limit, the rights granted to GitHub and its Affiliates under Sections D.4 and D.8."
+    },
+    {
+      "id": "c102",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "This license does not extend to Your Content stored in repositories that are not provided as Input to an AI Feature."
+    },
+    {
+      "id": "c103",
+      "kind": "added",
+      "section": "3. Development and Improvement Using Your Input and Output",
+      "before": "",
+      "after": "The opt-out right described in this section applies solely to the use of your Inputs and Outputs as described in this section, and does not apply to the license granted in Sections D.4-D.8 or to any Content that does not constitute Input or Output (including Content stored in public repositories)."
+    },
+    {
+      "id": "c104",
+      "kind": "added",
+      "section": "4. Disclaimers",
+      "before": "",
+      "after": "4. Disclaimers"
+    },
+    {
+      "id": "c105",
+      "kind": "added",
+      "section": "4. Disclaimers",
+      "before": "",
+      "after": "Output is provided \"as-is\" and subject to the disclaimers in Section O."
+    },
+    {
+      "id": "c106",
+      "kind": "added",
+      "section": "4. Disclaimers",
+      "before": "",
+      "after": "Without limiting Section O: Output may be inaccurate, incomplete, or non-functional."
+    },
+    {
+      "id": "c107",
+      "kind": "added",
+      "section": "4. Disclaimers",
+      "before": "",
+      "after": "Output may resemble third-party code, including code under open source licenses."
+    },
+    {
+      "id": "c108",
+      "kind": "added",
+      "section": "4. Disclaimers",
+      "before": "",
+      "after": "We do not guarantee that Output is free of errors, vulnerabilities, or intellectual property claims."
+    },
+    {
+      "id": "c109",
+      "kind": "added",
+      "section": "4. Disclaimers",
+      "before": "",
+      "after": "You are responsible for reviewing, testing, and validating any Output before use."
+    },
+    {
+      "id": "c110",
+      "kind": "added",
+      "section": "5. Your Responsibility and Indemnity",
+      "before": "",
+      "after": "5. Your Responsibility and Indemnity"
+    },
+    {
+      "id": "c111",
+      "kind": "added",
+      "section": "5. Your Responsibility and Indemnity",
+      "before": "",
+      "after": "You are responsible for your use of Output, including ensuring it complies with applicable law and does not infringe third-party rights."
+    },
+    {
+      "id": "c112",
+      "kind": "added",
+      "section": "5. Your Responsibility and Indemnity",
+      "before": "",
+      "after": "Your indemnity obligations in Section Q apply to your use of AI Features and Output, including claims arising from Output you incorporate into your products or services."
+    },
+    {
+      "id": "c113",
+      "kind": "changed",
+      "section": "3. Feedback",
+      "before": "We’re always trying to improve of products and services, and your feedback as a Beta Preview user will help us do that.",
+      "after": "We’re always trying to improve our products and services, and your feedback as a Beta Preview user will help us do that."
+    },
+    {
+      "id": "c114",
+      "kind": "changed",
+      "section": "L. Payment",
+      "before": "K. Payment",
+      "after": "L. Payment"
+    },
+    {
+      "id": "c115",
+      "kind": "changed",
+      "section": "M. Cancellation and Termination",
+      "before": "L. Cancellation and Termination",
+      "after": "M. Cancellation and Termination"
+    },
+    {
+      "id": "c116",
+      "kind": "changed",
+      "section": "N. Communications with GitHub",
+      "before": "M. Communications with GitHub",
+      "after": "N. Communications with GitHub"
+    },
+    {
+      "id": "c117",
+      "kind": "changed",
+      "section": "O. Disclaimer of Warranties",
+      "before": "N. Disclaimer of Warranties",
+      "after": "O. Disclaimer of Warranties"
+    },
+    {
+      "id": "c118",
+      "kind": "changed",
+      "section": "P. Limitation of Liability",
+      "before": "O. Limitation of Liability",
+      "after": "P. Limitation of Liability"
+    },
+    {
+      "id": "c119",
+      "kind": "changed",
+      "section": "Q. Release and Indemnification",
+      "before": "P. Release and Indemnification",
+      "after": "Q. Release and Indemnification"
+    },
+    {
+      "id": "c120",
+      "kind": "changed",
+      "section": "R. Changes to These Terms",
+      "before": "Q. Changes to These Terms",
+      "after": "R. Changes to These Terms"
+    },
+    {
+      "id": "c121",
+      "kind": "changed",
+      "section": "S. Miscellaneous",
+      "before": "R. Miscellaneous",
+      "after": "S. Miscellaneous"
+    },
+    {
+      "id": "c122",
+      "kind": "changed",
+      "section": "1. Governing Law",
+      "before": "However, any claim for injunctive relief with respect to a violation of section D.8 may be brought in any jurisdiction.",
+      "after": "However, any claim for injunctive relief with respect to a violation of section D.9 may be brought in any jurisdiction."
+    },
+    {
+      "id": "c123",
+      "kind": "changed",
+      "section": "5. Amendments; Complete Agreement",
+      "before": "This Agreement may only be modified by a written amendment signed by an authorized representative of GitHub, or by the posting by GitHub of a revised version in accordance with Section Q.",
+      "after": "This Agreement may only be modified by a written amendment signed by an authorized representative of GitHub, or by the posting by GitHub of a revised version in accordance with Section R."
+    }
+  ]
+}

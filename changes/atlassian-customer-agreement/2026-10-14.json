@@ -1,0 +1,110 @@
+{
+  "id": "atlassian-customer-agreement",
+  "name": "Atlassian Customer Agreement",
+  "from": "2026-04-02",
+  "to": "2026-10-14",
+  "fromArchive": "http://web.archive.org/web/20260402004940/https://www.atlassian.com/legal/atlassian-customer-agreement",
+  "document": "Atlassian Customer Agreement",
+  "summary": "The agreement adds terms for benchmarking, usage-based offerings, updates data processing references, clarifies customer obligations, and adjusts confidentiality and definitions related to Free, Beta, and Usage-Based Offerings.",
+  "changes": [
+    {
+      "ids": [
+        "c5",
+        "c6"
+      ],
+      "kind": "added",
+      "impact": "high",
+      "title": "New rules for benchmarking and public disclosure",
+      "what": "Customers can conduct benchmarks of Atlassian products but must include all info to replicate them when disclosing results, and cannot disclose results for Free or Beta Products.",
+      "before": "",
+      "after": "If Customer, directly or through a third party, conducts or publicly discloses the results of an Assessment, (i) the disclosure must include all information necessary to replicate the Assessment and (ii) Customer grants Atlassian a right to conduct Assessments of Customer’s products and services and, except for beta products or services, publicly disclose the results with all information necessary to replicate the Assessments.\nCustomer must not publicly disclose the results of any Assessment of Free or Beta Products, or cause such results to be disclosed."
+    },
+    {
+      "ids": [
+        "c9",
+        "c10",
+        "c11",
+        "c15",
+        "c16",
+        "c17",
+        "c18",
+        "c19"
+      ],
+      "kind": "changed",
+      "impact": "high",
+      "title": "Introduction of Usage-Based Offerings and related terms",
+      "what": "The agreement adds Usage-Based Offerings as a new product type with specific terms, includes them in definitions, and references a new Usage-Based Offering Terms document.",
+      "before": "4. Cloud Products…“Product-Specific Terms” means terms that apply only to certain Products or features, available at https://www.atlassian.com/legal/product-terms, including the AI Terms.…“Scope of Use” means Customer’s entitlements to the Products.…Such entitlements may be based on: (a) number of licenses, copies or instances, (b) entity, division, business unit, website, or field of use, (c) number and type of Users, (d) number of queries, requests or other usage-based subscription units, or (e) other restrictions or billable units.",
+      "after": "4.7 Usage-Based Offerings. … Cloud Products may be, or include access to, Usage-Based Offerings. … Atlassian provides Usage-Based Offerings under the Usage-Based Offering Terms. … “Product-Specific Terms” means terms that apply only to certain Products or features, available at https://www.atlassian.com/legal/product-terms, including the AI Terms and Usage-Based Offering Terms. … “Scope of Use” means Customer’s entitlements to the Products and Usage-Based Offerings. … Such entitlements may be based on: (a) number of licenses, copies or instances, (b) entity, division, business unit, website, or field of use, (c) number and type of Users, (d) number of queries, requests or other usage-based units, or (e) other restrictions or billable units. … “Usage-Based Offerings” means Usage-Based Offerings as described in the Usage-Based Offering Terms. … “Usage-Based Offering Terms” means the Atlassian usage-based offering terms available at https://www.atlassian.com/legal/usage-based-offering-terms.",
+      "quotedBy": "monitor"
+    },
+    {
+      "ids": [
+        "c7",
+        "c8"
+      ],
+      "kind": "changed",
+      "impact": "medium",
+      "title": "Updated reference for processing Customer Data in Cloud Products",
+      "what": "The clause about Atlassian processing Customer Data for Cloud Products now refers to the DPA Schedule 1 Section 6 instead of the agreement directly.",
+      "before": "Atlassian may process Customer Data to provide the Cloud Products and related Support or Advisory Services in accordance with this Agreement.",
+      "after": "Atlassian may process Customer Data as specified in Section 6 (Purposes of the Processing) of Schedule 1 of the DPA."
+    },
+    {
+      "ids": [
+        "c12"
+      ],
+      "kind": "changed",
+      "impact": "medium",
+      "title": "Clarified customer obligations for data and materials use",
+      "what": "Customer must ensure disclosures and consents for Atlassian's use of Customer Data and Materials as specified in particular sections rather than generally for Cloud Products, Support or Advisory Services.",
+      "before": "Customer must ensure it has made all disclosures and obtained all rights and consents necessary for Atlassian to use Customer Data and Customer Materials to provide the Cloud Products, Support or Advisory Services.",
+      "after": "Customer must ensure it has made all disclosures and obtained all rights and consents necessary for Atlassian to use Customer Data as specified in Section 4.1 (Customer Data) and Customer Materials as specified in Section 8 (Support and Advisory Services)."
+    },
+    {
+      "ids": [
+        "c13",
+        "c14"
+      ],
+      "kind": "changed",
+      "impact": "medium",
+      "title": "Changes to confidentiality of Free or Beta Products",
+      "what": "Atlassian’s Confidential Information now explicitly includes Free or Beta Product source code and performance info, but the statement that features and performance info of Free or Beta Products are confidential is removed.",
+      "before": "Atlassian’s Confidential Information includes any source code and technical or performance information about the Products.…Free or Beta Products may be inoperable, incomplete or include errors and bugs or features that Atlassian may never release, and their features and performance information are Atlassian’s Confidential Information.",
+      "after": "Atlassian’s Confidential Information includes any Product source code and technical or performance information about Free or Beta Products.…Free or Beta Products may be inoperable, incomplete or include errors and bugs or features that Atlassian may never release."
+    },
+    {
+      "ids": [
+        "c1"
+      ],
+      "kind": "changed",
+      "impact": "low",
+      "title": "Updated effective date",
+      "what": "The effective date of the agreement changed from October 7, 2025 to October 1, 2026.",
+      "before": "Effective starting: October 7, 2025",
+      "after": "Effective starting: October 1, 2026"
+    },
+    {
+      "ids": [
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "kind": "added",
+      "impact": "low",
+      "title": "Added new section heading and benchmarking introduction",
+      "what": "A new subsection 2.4 Benchmarking is added, introducing the concept of Assessments.",
+      "before": "",
+      "after": "2.4.\nBenchmarking.\nCustomer may conduct benchmarks or comparative assessments of the Products (each, an “Assessment”)."
+    }
+  ],
+  "minor": [],
+  "check": {
+    "total": 19,
+    "explained": 19,
+    "minor": 0,
+    "problems": [],
+    "draftProblems": 1,
+    "replaced": 1
+  }
+}

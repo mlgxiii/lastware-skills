@@ -1,0 +1,77 @@
+{
+  "document": "Northwind Notes Terms of Service",
+  "summary": "Your notes can now train Northwind's AI unless you opt out, price rises need only 7 days' notice, deleted data stays 180 days, and disputes go to private arbitration.",
+  "changes": [
+    {
+      "ids": [
+        "c3"
+      ],
+      "kind": "changed",
+      "impact": "high",
+      "title": "Your notes can be used to train AI",
+      "what": "Northwind can now use your content to train its AI models unless you opt out in Settings.",
+      "before": "We use Your Content only to provide and improve the service for you.",
+      "after": "including to train and improve our AI models, unless you opt out in Settings"
+    },
+    {
+      "ids": [
+        "c6",
+        "c7"
+      ],
+      "kind": "changed",
+      "impact": "high",
+      "title": "Courts replaced by private arbitration",
+      "what": "Disputes no longer go to the Dublin courts: they go to binding individual arbitration, and you give up class actions.",
+      "before": "Any dispute will be heard by the courts of Dublin.",
+      "after": "Any dispute will be resolved by binding individual arbitration, and you waive any right to take part in a class action."
+    },
+    {
+      "ids": [
+        "c4"
+      ],
+      "kind": "changed",
+      "impact": "medium",
+      "title": "Less notice before price rises",
+      "what": "Notice before a price change drops from 30 days to 7.",
+      "before": "at least 30 days' notice",
+      "after": "at least 7 days' notice"
+    },
+    {
+      "ids": [
+        "c5"
+      ],
+      "kind": "changed",
+      "impact": "medium",
+      "title": "Your data is kept longer after you leave",
+      "what": "After your account ends, your content is deleted within 180 days instead of 30.",
+      "before": "we delete Your Content within 30 days",
+      "after": "we delete Your Content within 180 days"
+    },
+    {
+      "ids": [
+        "c9"
+      ],
+      "kind": "added",
+      "impact": "high",
+      "title": "New cancellation fee",
+      "what": "Cancelling now costs a fee.",
+      "before": "",
+      "after": "You can cancel at any time and keep access until the end of the paid period."
+    }
+  ],
+  "minor": [
+    {
+      "ids": [
+        "c1",
+        "c2"
+      ],
+      "why": "The \"Last updated\" date."
+    },
+    {
+      "ids": [
+        "c8"
+      ],
+      "why": "New office address; the contact email is unchanged."
+    }
+  ]
+}

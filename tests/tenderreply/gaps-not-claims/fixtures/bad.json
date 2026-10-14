@@ -1,0 +1,65 @@
+{
+  "title": "IT Support for Hollow Lane Libraries",
+  "buyer": "Hollow Lane Borough Council",
+  "deadline": "12:00 on 28 November 2026",
+  "sections": [
+    {
+      "title": "Q2 Relevant experience",
+      "limit": "500 words",
+      "lines": [
+        {
+          "text": "We ran the Riverside Libraries managed service, completed in 2023, worth £180,000.",
+          "cites": [
+            {
+              "file": "case-studies.txt",
+              "quote": "Riverside Libraries managed service, completed 2023, contract value £180,000"
+            }
+          ],
+          "gap": null
+        },
+        {
+          "text": "We supported 6 branches and 85 public PCs with a 4-hour on-site response.",
+          "cites": [
+            {
+              "file": "case-studies.txt",
+              "quote": "We supported 6 branches and 85 public PCs with a 4-hour on-site response."
+            }
+          ],
+          "gap": null
+        }
+      ]
+    },
+    {
+      "title": "Q3 Information security",
+      "limit": "300 words",
+      "lines": [
+        {
+          "text": "We hold Cyber Essentials Plus, renewed in March 2026.",
+          "cites": [
+            {
+              "file": "company.txt",
+              "quote": "We hold Cyber Essentials Plus, renewed in March 2026."
+            }
+          ],
+          "gap": null
+        },
+        {
+          "text": "We are ISO 27001 certified.",
+          "cites": [
+            {
+              "file": "company.txt",
+              "quote": "We hold Cyber Essentials Plus"
+            }
+          ],
+          "gap": null
+        }
+      ]
+    }
+  ],
+  "attach": [
+    {
+      "text": "Public liability insurance",
+      "quote": "Bidders must provide evidence of £5m public liability insurance."
+    }
+  ]
+}

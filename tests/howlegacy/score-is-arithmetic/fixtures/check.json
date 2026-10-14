@@ -1,0 +1,28 @@
+{
+  "signals": [
+    {
+      "id": "screens",
+      "level": 4
+    },
+    {
+      "id": "workflows",
+      "level": 4
+    },
+    {
+      "id": "data",
+      "level": 3
+    },
+    {
+      "id": "people",
+      "level": 2
+    },
+    {
+      "id": "pricing",
+      "level": 4
+    },
+    {
+      "id": "era",
+      "level": 3
+    }
+  ]
+}

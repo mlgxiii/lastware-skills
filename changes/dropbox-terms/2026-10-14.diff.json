@@ -1,0 +1,22 @@
+{
+  "id": "dropbox-terms",
+  "from": "2026-04-02",
+  "to": "2026-10-14",
+  "fromArchive": "http://web.archive.org/web/20260402190226/https://www.dropbox.com/terms",
+  "changes": [
+    {
+      "id": "c1",
+      "kind": "added",
+      "section": "",
+      "before": "",
+      "after": "Dropbox’s Terms of Service will be changing effective January 1, 2027."
+    },
+    {
+      "id": "c2",
+      "kind": "added",
+      "section": "",
+      "before": "",
+      "after": "Click here to review the new terms."
+    }
+  ]
+}

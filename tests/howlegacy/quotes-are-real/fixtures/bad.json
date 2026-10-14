@@ -1,0 +1,72 @@
+{
+  "name": "Ledgerline",
+  "url": "https://ledgerline.example",
+  "signals": [
+    {
+      "id": "screens",
+      "level": 4,
+      "finding": "Only its own desktop client, sold through a demo.",
+      "quotes": [
+        {
+          "quote": "Book a demo with our team",
+          "source": "https://ledgerline.example"
+        }
+      ]
+    },
+    {
+      "id": "workflows",
+      "level": 4,
+      "finding": "Implementation takes months with certified partners.",
+      "quotes": [
+        {
+          "quote": "A typical implementation takes 4 to 6 months with one of our certified partners",
+          "source": "https://ledgerline.example/implementation"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "level": 4,
+      "finding": "System of record, on your servers, proprietary export format.",
+      "quotes": [
+        {
+          "quote": "Exports are available in Ledgerline Data Format (LDF)",
+          "source": "https://ledgerline.example/implementation"
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "level": 3,
+      "finding": "Consultants migrate data and train staff on site.",
+      "quotes": [
+        {
+          "quote": "Our consultants migrate your data and train your staff on site",
+          "source": "https://ledgerline.example/implementation"
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "level": 4,
+      "finding": "Per named user, modules, custom quote, three-year minimum.",
+      "quotes": [
+        {
+          "quote": "priced per seat with expensive annual licences",
+          "source": "https://ledgerline.example/pricing"
+        }
+      ]
+    },
+    {
+      "id": "era",
+      "level": 4,
+      "finding": "Founded 1991, version 11.2, hiring for Delphi and COBOL.",
+      "quotes": [
+        {
+          "quote": "Senior Developer, Delphi and COBOL",
+          "source": "https://ledgerline.example/careers"
+        }
+      ]
+    }
+  ]
+}

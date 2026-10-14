@@ -1,0 +1,43 @@
+{
+  "id": "zoom-terms",
+  "name": "Zoom Terms of Service",
+  "from": "2026-04-01",
+  "to": "2026-10-14",
+  "fromArchive": "https://web.archive.org/web/20260401010433/https://www.zoom.com/en/trust/terms/",
+  "document": "Zoom Terms of Service",
+  "summary": "The new version adds multiple new navigation and contact sections, but no changes to terms or user rights.",
+  "changes": [],
+  "minor": [
+    {
+      "ids": [
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "c8",
+        "c9",
+        "c10",
+        "c11",
+        "c12",
+        "c13",
+        "c14",
+        "c15",
+        "c16",
+        "c17",
+        "c18",
+        "c19"
+      ],
+      "why": "Added navigation, industry, audience, developer, partner, language, download, and contact sections; no changes to terms or user rights."
+    }
+  ],
+  "check": {
+    "total": 19,
+    "explained": 0,
+    "minor": 19,
+    "problems": [],
+    "draftProblems": 0
+  }
+}

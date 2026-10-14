@@ -1,0 +1,9 @@
+[0:12] Sam: We need to pick a launch date. I'd say the 14th.
+[0:20] Lea: The 14th is fine if the pricing page is done. Who's on it?
+[0:25] Sam: I'll finish pricing by Wednesday.
+[0:31] Lea: OK, launch on the 14th then.
+[0:40] Tom: Are we doing a Product Hunt launch too?
+[0:44] Lea: Not sure, let's decide next week.
+[0:52] Tom: I'll draft the announcement email.
+[1:05] Sam: I still think we should charge annually only.
+[1:09] Lea: I disagree, monthly converts better for us.

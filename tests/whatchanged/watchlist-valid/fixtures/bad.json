@@ -1,0 +1,5 @@
+[
+  { "id": "cursor-terms", "name": "Cursor Terms of Service", "url": "https://cursor.com/terms-of-service", "kind": "terms" },
+  { "id": "cursor-terms", "name": "Cursor again", "url": "https://cursor.com/terms-of-service", "kind": "terms" },
+  { "id": "My Notes", "name": "", "url": "http://localhost:3000/terms", "kind": "contract" }
+]

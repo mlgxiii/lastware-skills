@@ -1,0 +1,5 @@
+[https://ledgerline.example/implementation]
+Getting started
+A typical implementation takes 4 to 6 months with one of our certified partners.
+Our consultants migrate your data and train your staff on site.
+Exports are available in Ledgerline Data Format (LDF).

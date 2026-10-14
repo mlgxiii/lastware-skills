@@ -1,0 +1,45 @@
+# WhatChanged: every Monday, check the watched documents, explain what changed, and publish the page.
+# Needs one repository secret, OPENAI_API_KEY (any AI SDK model works; see scripts/explain.ts).
+name: WhatChanged
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: whatchanged
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run validate
+      - run: npm test
+      - run: npm run watch
+      - run: npm run explain
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - run: npm run site
+      - name: Save snapshots and changes
+        run: |
+          git config user.name "whatchanged-bot"
+          git config user.email "whatchanged-bot@users.noreply.github.com"
+          git add snapshots changes data
+          git diff --cached --quiet || git commit -m "WhatChanged: check of $(date -u +%F)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
