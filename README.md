@@ -36,7 +36,14 @@ npm run site                           # site/index.html
 { "id": "cursor-terms", "name": "Cursor Terms of Service", "url": "https://cursor.com/terms-of-service", "kind": "terms" }
 ```
 
-`kind` is one of `terms`, `privacy`, `ai-policy`, `pricing` or `regulation`. The `watchlist-valid` test checks it, and the page lists it from the next weekly run (`.github/workflows/whatchanged.yml`). The monitor identifies itself, waits between requests and skips pages that refuse it.
+`kind` is one of `terms`, `privacy`, `ai-policy`, `pricing` or `regulation`. The `watchlist-valid` test checks it on the pull request, and the page lists it from the next weekly run (`.github/workflows/whatchanged.yml`). The monitor identifies itself, obeys robots.txt, waits between requests and skips pages that refuse it.
+
+**How it stays honest and safe**
+- Explanations are written by AI; the quotes are the documents' own words, checked against both versions. High-impact explanations stay hidden until a person reviews them: the weekly run opens an issue, and setting `"reviewed": true` in the change file publishes them.
+- Pull requests run a check without any secret. A pull request that changes anything outside `watch/` fails that check on purpose: the weekly workflow runs this code with the repository's OpenAI key, so code changes need a line-by-line review.
+- To ask for a document to be removed, open an issue.
+
+**Try it:** the page has a "Compare two versions" box that runs the same diff in your browser, with no AI.
 
 The first run, on 14 October 2026, compared 8 of the 10 documents with their April 2026 copies in the Internet Archive (Google's terms and the EU AI Act FAQ had none). Anthropic, Slack and Figma hadn't changed; Zoom's only changes were menu text.
 - **Cursor** replaced binding arbitration with the courts of Texas.

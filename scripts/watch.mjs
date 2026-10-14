@@ -6,7 +6,7 @@
 //   node scripts/watch.mjs cursor     check one (by id)
 //
 // Writes snapshots/<id>/<date>.txt, changes/<id>/<date>.diff.json and data/status.json (read by the page).
-// It identifies itself, waits between requests, and skips any page that refuses it.
+// It identifies itself, obeys robots.txt, waits between requests, and skips any page that refuses it.
 import { createHash } from 'node:crypto';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -48,12 +48,41 @@ export function extract(html) {
 		.trim();
 }
 
+/**
+ * Does the site's robots.txt let us fetch this page? Rules for "LastwareWhatChanged" win over "*"; the longest
+ * matching path wins, Allow over Disallow on a tie. No robots.txt, or one we can't read, means yes.
+ */
+export async function allowed(url) {
+	const u = new URL(url);
+	const res = await fetch(`${u.origin}/robots.txt`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(15_000) }).catch(() => null);
+	if (!res?.ok) return true;
+	const groups = [];
+	let current = null;
+	for (const raw of (await res.text()).split('\n')) {
+		const line = raw.replace(/#.*/, '').trim();
+		const m = line.match(/^([a-z-]+)\s*:\s*(.*)$/i);
+		if (!m) continue;
+		const [, key, value] = [m[0], m[1].toLowerCase(), m[2].trim()];
+		if (key === 'user-agent') {
+			if (!current || current.rules.length) groups.push((current = { agents: [], rules: [] }));
+			current.agents.push(value.toLowerCase());
+		} else if ((key === 'allow' || key === 'disallow') && current) current.rules.push({ allow: key === 'allow', path: value });
+	}
+	const ours = groups.filter((g) => g.agents.some((a) => a !== '*' && 'lastwarewhatchanged'.includes(a)));
+	const rules = (ours.length ? ours : groups.filter((g) => g.agents.includes('*'))).flatMap((g) => g.rules).filter((r) => r.path);
+	const path = u.pathname + u.search;
+	const matches = (p) => new RegExp('^' + p.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*').replace(/\\\$$/, '$')).test(path);
+	const hit = rules.filter((r) => matches(r.path)).sort((a, b) => b.path.length - a.path.length || Number(b.allow) - Number(a.allow))[0];
+	return !hit || hit.allow;
+}
+
 const sha = (s) => createHash('sha256').update(s).digest('hex').slice(0, 16);
 const readJson = (p, fallback) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return fallback; } };
 const write = (p, data) => { mkdirSync(dirname(p), { recursive: true }); writeFileSync(p, typeof data === 'string' ? data : JSON.stringify(data, null, 2)); };
 
 export async function check(entry, status) {
 	const s = (status[entry.id] = { ...status[entry.id], id: entry.id, name: entry.name, url: entry.url, kind: entry.kind, checked: today });
+	if (!(await allowed(entry.url))) return (s.error = 'Its robots.txt asks bots not to fetch this page; skipped.'), console.log(`✗ ${entry.id}: ${s.error}`);
 	let res;
 	try {
 		res = await fetch(entry.url, { headers: { 'user-agent': UA, accept: 'text/html' }, redirect: 'follow', signal: AbortSignal.timeout(30_000) });

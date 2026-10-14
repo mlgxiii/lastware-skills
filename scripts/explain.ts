@@ -19,6 +19,7 @@ const only = process.argv[2];
 const parse = (t: string) => JSON.parse(t.replace(/^```(?:json)?\s*|\s*```$/g, ''));
 
 type Msg = { role: 'user' | 'assistant'; content: string };
+const newHigh: { id: string; name: string; date: string; file: string; titles: string[] }[] = [];
 
 for (const id of readdirSync(join(root, 'changes')).filter((d) => !only || d === only)) {
 	for (const file of readdirSync(join(root, 'changes', id)).filter((f) => f.endsWith('.diff.json'))) {
@@ -75,8 +76,13 @@ for (const id of readdirSync(join(root, 'changes')).filter((d) => !only || d ===
 			answer.minor = [...(answer.minor ?? []), ...unquotable.map((c: { ids: string[]; title: string }) => ({ ids: c.ids, why: `${c.title} (numbering only)` }))];
 		}
 		if (replaced || unquotable.length) result = verify(answer, oldText, newText);
-		writeFileSync(out, JSON.stringify({ id, name, from: d.from, to: d.to, fromArchive: d.fromArchive, ...answer, check: { total: result.total, explained: result.explained, minor: result.minor, problems: result.problems, draftProblems, replaced } }, null, 2));
-		const high = (answer.changes ?? []).filter((c: { impact: string }) => c.impact === 'high').length;
-		console.log(`${result.problems.length ? '✗' : '✓'} ${id}: ${result.total} changes, ${answer.changes?.length ?? 0} that matter (${high} high), ${result.minor} minor; first draft had ${draftProblems} problem(s), ${replaced} quote(s) replaced by the document's own words, now ${result.problems.length}`);
+		const high = (answer.changes ?? []).filter((c: { impact: string }) => c.impact === 'high');
+		// High-impact explanations wait for a person: the page shows their quotes, and their explanation once reviewed.
+		if (high.length) newHigh.push({ id, name, date: d.to, file: `changes/${id}/${file.replace('.diff.json', '.json')}`, titles: high.map((c: { title: string }) => c.title) });
+		writeFileSync(out, JSON.stringify({ id, name, from: d.from, to: d.to, fromArchive: d.fromArchive, reviewed: !high.length, ...answer, check: { total: result.total, explained: result.explained, minor: result.minor, problems: result.problems, draftProblems, replaced } }, null, 2));
+		console.log(`${result.problems.length ? '✗' : '✓'} ${id}: ${result.total} changes, ${answer.changes?.length ?? 0} that matter (${high.length} high), ${result.minor} minor; first draft had ${draftProblems} problem(s), ${replaced} quote(s) replaced by the document's own words, now ${result.problems.length}`);
 	}
 }
+
+// For the weekly workflow: open an issue asking for a review when there's something new and high-impact.
+if (newHigh.length) writeFileSync(join(root, 'data/to-review.json'), JSON.stringify(newHigh, null, 2));

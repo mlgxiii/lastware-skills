@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // WhatChanged's front door: one static page from data/status.json and changes/*/*.json. No dependencies.
 //   node scripts/site.mjs   → site/index.html
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from './validate-watch.mjs';
@@ -28,10 +28,10 @@ const unchanged = watched.filter((e) => !reports.some((r) => r.id === e.id) && !
 const failing = watched.filter((e) => status[e.id]?.error);
 const totals = reports.reduce((t, r) => ({ docs: t.docs + ((r.changes ?? []).length ? 1 : 0), high: t.high + (r.changes ?? []).filter((c) => c.impact === 'high').length }), { docs: 0, high: 0 });
 
-const change = (c) => `
+const change = (c, pending) => `
 <li class="change ${esc(c.impact)}">
-  <div class="head"><span class="impact">${esc(c.impact)}</span><h4>${esc(c.title)}</h4></div>
-  <p class="what">${esc(c.what)}</p>
+  <div class="head"><span class="impact">${esc(c.impact)}</span><h4>${esc(c.title)}</h4>${pending && c.impact === 'high' ? '<span class="pending">Explanation awaiting review</span>' : ''}</div>
+  ${pending && c.impact === 'high' ? '' : `<p class="what">${esc(c.what)}</p>`}
   <div class="pair">
     <div class="side before"><span class="lab">Before</span>${c.before ? `<blockquote>${esc(c.before)}</blockquote>` : '<p class="none">Not in the old version.</p>'}</div>
     <div class="side after"><span class="lab">After</span>${c.after ? `<blockquote>${esc(c.after)}</blockquote>` : '<p class="none">Removed.</p>'}</div>
@@ -50,8 +50,8 @@ const report = (r) => {
     <p class="dates">${r.fromArchive ? `<a href="${esc(r.fromArchive)}">${fmt(r.from)} (archived copy)</a>` : fmt(r.from)} → ${fmt(r.to)}</p>
   </header>
   ${items.length ? `<p class="summary">${esc(r.summary)}</p>` : `<p class="summary quiet">Nothing that changes your rights: ${minor} small edit${minor === 1 ? '' : 's'} to the page (menus, numbering, wording).</p>`}
-  ${items.length ? `<ul class="changes">${items.map(change).join('')}</ul>` : ''}
-  <p class="foot"><span class="${ok ? 'ok' : 'warn'}">${ok ? '✓ Every change found by code is explained or listed as minor, and every quote is checked against both versions.' : `⚠ ${(r.check?.problems ?? []).length} check(s) failed; read with care.`}</span>${minor && items.length ? ` ${minor} minor edit${minor === 1 ? '' : 's'} (dates, numbering, menus) not shown.` : ''}</p>
+  ${items.length ? `<ul class="changes">${items.map((c) => change(c, !r.reviewed)).join('')}</ul>` : ''}
+  <p class="foot"><span class="${ok ? 'ok' : 'warn'}">${ok ? '✓ Every change found by code is explained or listed as minor, and every quote is checked against both versions.' : `⚠ ${(r.check?.problems ?? []).length} check(s) failed; read with care.`}</span> Explanations are written by AI${r.reviewed ? ' and reviewed by a person' : ''}; the quotes are the documents' own words.${minor && items.length ? ` ${minor} minor edit${minor === 1 ? '' : 's'} (dates, numbering, menus) not shown.` : ''}</p>
 </article>`;
 };
 
@@ -104,6 +104,14 @@ h1 { font: 700 clamp(30px, 6vw, 44px)/1.05 var(--serif); letter-spacing: -0.01em
 blockquote { margin: 4px 0 0; font-family: var(--serif); overflow-wrap: anywhere; max-height: 14em; overflow: auto; }
 .none { margin: 4px 0 0; color: var(--muted); font-style: italic; }
 .note { margin: 0; font-size: 12px; color: var(--muted); }
+.pending { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px dashed var(--hair); border-radius: 99px; padding: 1px 8px; }
+.try { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 22px; display: grid; gap: 12px; }
+.try .inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.try label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+.try textarea { width: 100%; min-height: 170px; font: 13px/1.5 var(--sans); color: var(--fg); background: var(--bg); border: 1px solid var(--hair); border-radius: 8px; padding: 10px; resize: vertical; }
+.try button { justify-self: start; font: 600 14px var(--sans); color: #fff; background: var(--accent); border: 0; border-radius: 99px; padding: 9px 18px; cursor: pointer; }
+.try button:focus-visible, .try textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#result:empty { display: none; }
 .foot { margin: 0; font-size: 13px; color: var(--muted); border-top: 1px solid var(--hair); padding-top: 10px; }
 .ok { color: var(--ok); } .warn { color: var(--high); }
 .list { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; font-size: 14px; }
@@ -112,7 +120,7 @@ blockquote { margin: 4px 0 0; font-family: var(--serif); overflow-wrap: anywhere
 .how b { color: var(--fg); display: block; }
 h2 { font: 600 20px var(--serif); margin: 0; }
 code { font-size: 13px; background: var(--card); border: 1px solid var(--hair); border-radius: 5px; padding: 1px 5px; }
-@media (max-width: 640px) { .pair, .how { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .pair, .how, .try .inputs { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -125,16 +133,35 @@ code { font-size: 13px; background: var(--card); border: 1px solid var(--hair); 
 ${reports.map(report).join('')}
 ${unchanged.length ? `<section><h2>No change</h2><ul class="list">${unchanged.map((e) => `<li><a href="${esc(e.url)}">${esc(e.name)}</a></li>`).join('')}</ul></section>` : ''}
 ${failing.length ? `<section><h2>Couldn't read</h2><ul class="list">${failing.map((e) => `<li>${esc(e.name)}: ${esc(status[e.id].error)}</li>`).join('')}</ul></section>` : ''}
+<section class="try" aria-labelledby="try-h">
+  <h2 id="try-h">Compare two versions yourself</h2>
+  <p class="note">Paste the old and new text of any terms, contract or policy. The same code as the monitor lists every changed clause. It runs in your browser: nothing is sent anywhere, and no AI is involved.</p>
+  <div class="inputs">
+    <label for="old">Old version<textarea id="old" spellcheck="false"></textarea></label>
+    <label for="new">New version<textarea id="new" spellcheck="false"></textarea></label>
+  </div>
+  <button type="button" id="compare">Compare</button>
+  <div id="result" aria-live="polite"></div>
+</section>
 <section class="how">
   <div><b>Nothing is skipped.</b>Code compares the two versions clause by clause. Every change is either explained or listed as minor with a reason.</div>
   <div><b>Every quote is real.</b>Each "before" is checked word for word against the old version, each "after" against the new one.</div>
   <div><b>Add a document.</b>Open a pull request adding <code>watch/&lt;id&gt;.json</code> with its name and address. <a href="${REPO}">The code is open source.</a></div>
 </section>
-<p class="note">This is not legal advice: it shows what changed and what it means in plain words. Older versions come from the Internet Archive's Wayback Machine.</p>
+<p class="note">This is not legal advice: it shows what changed and what it means in plain words. Older versions come from the Internet Archive's Wayback Machine. The monitor identifies itself and obeys robots.txt. To ask for a document to be removed, <a href="${REPO}/issues">open an issue</a>.</p>
 </main>
+<script>globalThis.process = { argv: [] };</script>
+<script type="importmap">{ "imports": { "node:fs": "./shim.js", "node:path": "./shim.js", "node:url": "./shim.js" } }</script>
+<script type="module" src="./compare.js"></script>
 </body>
 </html>
 `;
 mkdirSync(join(root, 'site'), { recursive: true });
 writeFileSync(join(root, 'site/index.html'), html);
+// The compare box runs the skill's own diff in the browser; Node-only imports point to a tiny shim.
+copyFileSync(join(root, 'skills/whatchanged/scripts/diff.mjs'), join(root, 'site/diff.mjs'));
+copyFileSync(join(root, 'skills/whatchanged/scripts/check.mjs'), join(root, 'site/check.mjs'));
+copyFileSync(join(root, 'scripts/site-compare.js'), join(root, 'site/compare.js'));
+for (const v of ['old', 'new']) copyFileSync(join(root, `tests/whatchanged/no-silent-change/fixtures/${v}.md`), join(root, `site/example-${v}.txt`));
+writeFileSync(join(root, 'site/shim.js'), "export const readFileSync = () => { throw new Error('No files in the browser'); };\nexport const basename = (p) => String(p).split('/').pop();\nexport const pathToFileURL = (p) => new URL('file:///' + p);\n");
 console.log(`site/index.html: ${watched.length} watched, ${reports.length} with changes, ${totals.high} high-impact.`);

@@ -1,0 +1,28 @@
+# Runs on every pull request, without any secret: validates the watchlist and the tests, and flags any change
+# outside watch/, because the weekly workflow runs this repository's code with the OpenAI key.
+name: PR check
+on: pull_request
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/validate-watch.mjs
+      - run: node scripts/test.mjs
+      - name: Changes outside watch/
+        run: |
+          outside=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -v '^watch/' || true)
+          if [ -n "$outside" ]; then
+            echo "::error::This pull request changes more than the watchlist:"
+            echo "$outside"
+            echo "::error::The weekly workflow runs this code with the repository's OpenAI key. Review every line before merging."
+            exit 1
+          fi
+          echo "Only watch/ changed: safe to merge once the checks pass."
