@@ -5,7 +5,7 @@
     "url": "https://www.anthropic.com/legal/consumer-terms",
     "kind": "terms",
     "checked": "2026-10-14",
-    "chars": 36061,
+    "chars": 28872,
     "since": "2026-10-14"
   },
   "atlassian-customer-agreement": {
@@ -68,7 +68,7 @@
     "url": "https://policies.google.com/terms?hl=en",
     "kind": "terms",
     "checked": "2026-10-14",
-    "chars": 37023,
+    "chars": 30214,
     "since": "2026-10-14"
   },
   "slack-user-terms": {
@@ -86,7 +86,7 @@
     "url": "https://www.zoom.com/en/trust/terms/",
     "kind": "terms",
     "checked": "2026-10-14",
-    "chars": 88020,
+    "chars": 88038,
     "since": "2026-10-14"
   }
 }
