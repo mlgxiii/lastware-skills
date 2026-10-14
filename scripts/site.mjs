@@ -60,72 +60,90 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
 <title>WhatChanged</title>
 <meta name="description" content="What changed in the terms of service and AI rules you agreed to, with the exact words before and after.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
 <style>
+/* Lastware's look (brain/design/guidelines.md): one dark, grainy world; WhatChanged's undertone is Iris (hue 295). */
 :root {
-  --bg: #f6f5f1; --card: #ffffff; --fg: #1b1c1f; --muted: #62646b; --hair: #e4e2db;
-  --high: #c2410c; --high-bg: #fff1e8; --med: #a16207; --med-bg: #fdf6e3; --low: #4b5563; --low-bg: #f1f2f4;
-  --before: #fdecec; --after: #e9f6ee; --accent: #1d4ed8; --ok: #15803d;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  --serif: "Iowan Old Style", "Charter", Georgia, serif;
+  --ground: oklch(0.19 0.016 295); --ground-2: oklch(0.24 0.016 295); --panel: oklch(0.23 0.016 295 / 0.72);
+  --fg: oklch(0.95 0.006 295); --muted: oklch(0.72 0.012 295); --hair: oklch(0.95 0.006 295 / 0.1);
+  --high: oklch(0.72 0.14 30); --med: oklch(0.82 0.12 85); --ok: oklch(0.78 0.13 155); --accent: oklch(0.86 0.04 295);
+  --before: oklch(0.65 0.12 30 / 0.12); --after: oklch(0.7 0.11 155 / 0.12);
+  --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: dark;
 }
-@media (prefers-color-scheme: dark) { :root { --bg: #121315; --card: #1b1c1f; --fg: #ececee; --muted: #a1a3a9; --hair: #2c2e33;
-  --high: #fb923c; --high-bg: #2a1a10; --med: #facc15; --med-bg: #29230d; --low: #9ca3af; --low-bg: #23252a;
-  --before: #2a1717; --after: #12261a; --accent: #8ab4ff; --ok: #4ade80; color-scheme: dark; } }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 var(--sans); }
-main { max-width: 860px; margin: 0 auto; padding: 40px max(16px, env(safe-area-inset-right)) 64px max(16px, env(safe-area-inset-left)); display: grid; gap: 28px; }
-a { color: var(--accent); }
-h1 { font: 700 clamp(30px, 6vw, 44px)/1.05 var(--serif); letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
-.lede { color: var(--muted); font-size: 18px; margin: 10px 0 0; max-width: 40em; }
-.stats { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
-.stats b { color: var(--fg); font-size: 20px; display: block; font-variant-numeric: tabular-nums; }
-.doc { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 22px; display: grid; gap: 14px; min-width: 0; }
+html { background: var(--ground); }
+body { margin: 0; color: var(--fg); font: 16px/1.6 var(--sans); min-height: 100vh;
+  background: radial-gradient(70rem 50rem at 100% 0%, var(--ground-2), transparent 60%), var(--ground); }
+/* Film grain, as on every Lastware page. */
+body::before { content: ""; position: fixed; inset: -50%; pointer-events: none; z-index: 0; opacity: .16; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 1.2s steps(6) infinite; }
+@keyframes grain { 0%,100% { transform: translate(0,0) } 33% { transform: translate(-2%,1%) } 66% { transform: translate(1%,-2%) } }
+@media (prefers-reduced-motion: reduce) { body::before { animation: none; } }
+main { position: relative; z-index: 1; max-width: 880px; margin: 0 auto; padding: 56px max(16px, env(safe-area-inset-right)) 72px max(16px, env(safe-area-inset-left)); display: grid; gap: 34px; }
+a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.eyebrow { font: 500 11px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 18px; display: flex; gap: 10px; align-items: center; }
+.eyebrow i { width: 8px; height: 8px; border: 1px solid var(--accent); transform: rotate(45deg); display: inline-block; }
+h1 { font: 300 clamp(36px, 7vw, 60px)/1.02 var(--sans); letter-spacing: -0.035em; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); font-size: 18px; font-weight: 300; margin: 16px 0 0; max-width: 38em; }
+.cta { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; font: 500 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ground); background: var(--fg); border-radius: 3px; padding: 12px 16px; text-decoration: none; }
+.cta:hover { background: var(--accent); }
+.stats { display: flex; gap: 32px; flex-wrap: wrap; font: 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.stats b { color: var(--fg); font: 300 30px var(--sans); letter-spacing: -0.02em; display: block; text-transform: none; font-variant-numeric: tabular-nums; }
+.doc { border-top: 1px solid var(--hair); padding-top: 26px; display: grid; gap: 16px; min-width: 0; }
 .doc header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-.doc h3 { margin: 0; font: 600 21px/1.25 var(--serif); }
-.doc h3 a { color: inherit; text-decoration: none; }
-.dates { margin: 0; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.dates a { color: inherit; }
-.summary { margin: 0; font-size: 17px; }
-.summary.quiet { color: var(--muted); font-size: 15px; }
-.changes { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
-.change { border-left: 3px solid var(--low); padding: 2px 0 2px 14px; display: grid; gap: 8px; min-width: 0; }
+.doc h3 { margin: 0; font: 400 24px/1.25 var(--sans); letter-spacing: -0.015em; }
+.doc h3 a { text-decoration: none; }
+.dates { margin: 0; font: 11px var(--mono); letter-spacing: .06em; color: var(--muted); font-variant-numeric: tabular-nums; }
+.summary { margin: 0; font-size: 20px; font-weight: 300; line-height: 1.45; max-width: 44em; }
+.summary.quiet { color: var(--muted); font-size: 16px; }
+.changes { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+.change { border-left: 1px solid var(--hair); padding: 2px 0 2px 16px; display: grid; gap: 9px; min-width: 0; }
 .change.high { border-color: var(--high); } .change.medium { border-color: var(--med); }
-.head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
-.head h4 { margin: 0; font-size: 16px; }
-.impact { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 2px 8px; border-radius: 99px; background: var(--low-bg); color: var(--low); }
-.high .impact { background: var(--high-bg); color: var(--high); } .medium .impact { background: var(--med-bg); color: var(--med); }
-.what { margin: 0; color: var(--muted); font-size: 15px; }
+.head { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.head h4 { margin: 0; font-size: 16px; font-weight: 500; }
+.impact { font: 500 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; padding: 3px 8px; border-radius: 99px; border: 1px solid var(--hair); color: var(--muted); }
+.high .impact { color: var(--high); border-color: color-mix(in oklab, var(--high) 45%, transparent); }
+.medium .impact { color: var(--med); border-color: color-mix(in oklab, var(--med) 45%, transparent); }
+.what { margin: 0; color: var(--muted); font-size: 15px; max-width: 46em; }
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.side { border-radius: 8px; padding: 10px 12px; font-size: 14px; min-width: 0; }
+.side { border-radius: 3px; padding: 11px 13px; font-size: 14px; min-width: 0; border: 1px solid var(--hair); }
 .before { background: var(--before); } .after { background: var(--after); }
-.lab { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-blockquote { margin: 4px 0 0; font-family: var(--serif); overflow-wrap: anywhere; max-height: 14em; overflow: auto; }
-.none { margin: 4px 0 0; color: var(--muted); font-style: italic; }
-.note { margin: 0; font-size: 12px; color: var(--muted); }
-.pending { font-size: 11px; font-weight: 600; color: var(--muted); border: 1px dashed var(--hair); border-radius: 99px; padding: 1px 8px; }
-.try { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 22px; display: grid; gap: 12px; }
-.try .inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.try label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
-.try textarea { width: 100%; min-height: 170px; font: 13px/1.5 var(--sans); color: var(--fg); background: var(--bg); border: 1px solid var(--hair); border-radius: 8px; padding: 10px; resize: vertical; }
-.try button { justify-self: start; font: 600 14px var(--sans); color: #fff; background: var(--accent); border: 0; border-radius: 99px; padding: 9px 18px; cursor: pointer; }
-.try button:focus-visible, .try textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-#result:empty { display: none; }
-.foot { margin: 0; font-size: 13px; color: var(--muted); border-top: 1px solid var(--hair); padding-top: 10px; }
+.lab { font: 500 10px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+blockquote { margin: 6px 0 0; line-height: 1.55; overflow-wrap: anywhere; max-height: 14em; overflow: auto; }
+.none { margin: 6px 0 0; color: var(--muted); font-style: italic; }
+.note { margin: 0; font: 11px/1.6 var(--mono); letter-spacing: .02em; color: var(--muted); }
+.pending { font: 500 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border: 1px dashed var(--hair); border-radius: 99px; padding: 3px 8px; }
+.foot { margin: 0; font: 11px/1.6 var(--mono); color: var(--muted); }
 .ok { color: var(--ok); } .warn { color: var(--high); }
-.list { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; padding: 0; list-style: none; font-size: 14px; }
-.list li { background: var(--card); border: 1px solid var(--hair); border-radius: 99px; padding: 4px 12px; }
-.how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; font-size: 14px; color: var(--muted); }
-.how b { color: var(--fg); display: block; }
-h2 { font: 600 20px var(--serif); margin: 0; }
-code { font-size: 13px; background: var(--card); border: 1px solid var(--hair); border-radius: 5px; padding: 1px 5px; }
+h2 { font: 400 20px var(--sans); letter-spacing: -0.01em; margin: 0 0 12px; }
+.list { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; font: 12px var(--mono); }
+.list li { border: 1px solid var(--hair); border-radius: 3px; padding: 6px 10px; }
+.try { border: 1px solid var(--hair); background: var(--panel); border-radius: 3px; padding: 22px; display: grid; gap: 14px; }
+.try .inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.try label { display: grid; gap: 6px; font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.try textarea { width: 100%; min-height: 170px; font: 13px/1.5 var(--sans); color: var(--fg); background: var(--ground); border: 1px solid var(--hair); border-radius: 3px; padding: 10px; resize: vertical; }
+.try button { justify-self: start; font: 500 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ground); background: var(--fg); border: 0; border-radius: 3px; padding: 12px 16px; cursor: pointer; }
+.try button:hover { background: var(--accent); }
+.try button:focus-visible, .try textarea:focus-visible, .cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+#result:empty { display: none; }
+.how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--hair); padding-top: 26px; }
+.how b { color: var(--fg); display: block; font-weight: 500; margin-bottom: 4px; }
+code { font: 12px var(--mono); border: 1px solid var(--hair); border-radius: 3px; padding: 1px 5px; }
 @media (max-width: 640px) { .pair, .how, .try .inputs { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <main>
 <header>
+  <p class="eyebrow"><i></i>Lastware · WhatChanged · open-source monitor</p>
   <h1>What changed in the terms you agreed to</h1>
   <p class="lede">We watch the terms of service and AI rules behind the tools you use. When one changes, code finds every changed clause and each one is explained with the exact words before and after.</p>
 </header>
