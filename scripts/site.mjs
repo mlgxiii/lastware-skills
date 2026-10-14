@@ -146,6 +146,7 @@ code { font: 12px var(--mono); border: 1px solid var(--hair); border-radius: 3px
   <p class="eyebrow"><i></i>Lastware · WhatChanged · open-source monitor</p>
   <h1>What changed in the terms you agreed to</h1>
   <p class="lede">We watch the terms of service and AI rules behind the tools you use. When one changes, code finds every changed clause and each one is explained with the exact words before and after.</p>
+  <a class="cta" href="https://mlgxiii.vercel.app/p/whatchanged">Check any link yourself →</a>
 </header>
 <div class="stats"><span><b>${watched.length}</b>documents watched</span><span><b>${totals.docs}</b>changed</span><span><b>${totals.high}</b>high-impact changes</span></div>
 ${reports.map(report).join('')}
