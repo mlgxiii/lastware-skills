@@ -1,0 +1,34 @@
+[
+  {
+    "id": "atlassian-customer-agreement",
+    "name": "Atlassian Customer Agreement",
+    "date": "2026-10-14",
+    "file": "changes/atlassian-customer-agreement/2026-10-14.json",
+    "titles": [
+      "New rules for benchmarking and public disclosure",
+      "Introduction of Usage-Based Offerings and related terms"
+    ]
+  },
+  {
+    "id": "cursor-terms",
+    "name": "Cursor Terms of Service",
+    "date": "2026-10-14",
+    "file": "changes/cursor-terms/2026-10-14.json",
+    "titles": [
+      "Mandatory arbitration replaced with litigation in Texas courts",
+      "New dispute resolution and governing law provisions",
+      "Added limitations period for claims"
+    ]
+  },
+  {
+    "id": "github-terms",
+    "name": "GitHub Terms of Service",
+    "date": "2026-10-14",
+    "file": "changes/github-terms/2026-10-14.json",
+    "titles": [
+      "License grant expanded to include AI training",
+      "New section on AI Features, training, and your data with opt-out",
+      "Detailed rules on access to private repository content"
+    ]
+  }
+]

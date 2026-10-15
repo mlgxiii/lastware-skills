@@ -11,6 +11,13 @@ const REPO = 'https://github.com/mlgxiii/lastware-skills';
 const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 const fmt = (d) => (d ? new Date(`${d}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : '');
 const RANK = { high: 0, medium: 1, low: 2 };
+const PAGE = 'https://mlgxiii.github.io/lastware-skills/';
+const TOOL = 'https://mlgxiii.vercel.app/p/whatchanged';
+/** The document's public page on WhatChanged (same address rule as lastware/src/lib/server/whatchanged.ts docSlug). */
+const docPage = (url) => {
+	const u = new URL(url);
+	return `${TOOL}/t/${`${u.hostname.replace(/^(www|docs)\./, '')}${u.pathname}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 90)}`;
+};
 
 const status = existsSync(join(root, 'data/status.json')) ? JSON.parse(readFileSync(join(root, 'data/status.json'), 'utf8')) : {};
 const watched = load(join(root, 'watch'));
@@ -51,7 +58,7 @@ const report = (r) => {
   </header>
   ${items.length ? `<p class="summary">${esc(r.summary)}</p>` : `<p class="summary quiet">Nothing that changes your rights: ${minor} small edit${minor === 1 ? '' : 's'} to the page (menus, numbering, wording).</p>`}
   ${items.length ? `<ul class="changes">${items.map((c) => change(c, !r.reviewed)).join('')}</ul>` : ''}
-  <p class="foot"><span class="${ok ? 'ok' : 'warn'}">${ok ? '✓ Every change found by code is explained or listed as minor, and every quote is checked against both versions.' : `⚠ ${(r.check?.problems ?? []).length} check(s) failed; read with care.`}</span> Explanations are written by AI${r.reviewed ? ' and reviewed by a person' : ''}; the quotes are the documents' own words.${minor && items.length ? ` ${minor} minor edit${minor === 1 ? '' : 's'} (dates, numbering, menus) not shown.` : ''}</p>
+  <p class="foot">${items.length ? `<a href="${esc(docPage(r.url))}">Full page and a fresh check on WhatChanged →</a><br>` : ''}<span class="${ok ? 'ok' : 'warn'}">${ok ? '✓ Every change found by code is explained or listed as minor, and every quote is checked against both versions.' : `⚠ ${(r.check?.problems ?? []).length} check(s) failed; read with care.`}</span> Explanations are written by AI${r.reviewed ? ' and reviewed by a person' : ''}; the quotes are the documents' own words.${minor && items.length ? ` ${minor} minor edit${minor === 1 ? '' : 's'} (dates, numbering, menus) not shown.` : ''}</p>
 </article>`;
 };
 
@@ -61,8 +68,17 @@ const html = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
-<title>WhatChanged</title>
-<meta name="description" content="What changed in the terms of service and AI rules you agreed to, with the exact words before and after.">
+<title>Terms of service changes, watched weekly · WhatChanged</title>
+<meta name="description" content="What changed this year in the terms of service of Cursor, GitHub, Zoom, Dropbox and more, with the exact words before and after. Open source, updated every Monday.">
+<link rel="canonical" href="${PAGE}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lastware">
+<meta property="og:title" content="Terms of service changes, watched weekly · WhatChanged">
+<meta property="og:description" content="What changed in the terms of service and AI rules behind the tools you use, with the exact words before and after.">
+<meta property="og:url" content="${PAGE}">
+<meta property="og:image" content="https://mlgxiii.vercel.app/og/whatchanged.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Terms of service changes, watched weekly', url: PAGE, isPartOf: { '@type': 'WebSite', name: 'Lastware', url: 'https://mlgxiii.vercel.app/' }, mainEntity: { '@type': 'ItemList', itemListElement: reports.filter((r) => (r.changes ?? []).length).map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: `What changed in ${r.name}`, url: docPage(r.url) })) } }).replace(/</g, '\\u003c')}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
