@@ -1,0 +1,26 @@
+{
+  "id": "anthropic-consumer-terms",
+  "name": "Anthropic Consumer Terms of Service",
+  "from": "2026-10-14",
+  "to": "2026-10-26",
+  "reviewed": true,
+  "document": "Anthropic Consumer Terms of Service",
+  "summary": "No meaningful changes were made between the versions.",
+  "changes": [],
+  "minor": [
+    {
+      "ids": [
+        "c1"
+      ],
+      "why": "Empty change or formatting update with no text difference."
+    }
+  ],
+  "check": {
+    "total": 1,
+    "explained": 0,
+    "minor": 1,
+    "problems": [],
+    "draftProblems": 0,
+    "replaced": 0
+  }
+}

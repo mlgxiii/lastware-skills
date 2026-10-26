@@ -1,0 +1,14 @@
+{
+  "id": "anthropic-consumer-terms",
+  "from": "2026-10-14",
+  "to": "2026-10-26",
+  "changes": [
+    {
+      "id": "c1",
+      "kind": "added",
+      "section": "",
+      "before": "",
+      "after": ""
+    }
+  ]
+}

@@ -4,16 +4,17 @@
     "name": "Anthropic Consumer Terms of Service",
     "url": "https://www.anthropic.com/legal/consumer-terms",
     "kind": "terms",
-    "checked": "2026-10-19",
-    "chars": 28872,
-    "since": "2026-10-14"
+    "checked": "2026-10-26",
+    "chars": 28890,
+    "since": "2026-10-14",
+    "changed": "2026-10-26"
   },
   "atlassian-customer-agreement": {
     "id": "atlassian-customer-agreement",
     "name": "Atlassian Customer Agreement",
     "url": "https://www.atlassian.com/legal/atlassian-customer-agreement",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 46720,
     "since": "2026-10-14"
   },
@@ -22,7 +23,7 @@
     "name": "Cursor Terms of Service",
     "url": "https://cursor.com/terms-of-service",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 61731,
     "since": "2026-10-14"
   },
@@ -31,7 +32,7 @@
     "name": "Dropbox Terms of Service",
     "url": "https://www.dropbox.com/terms",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 25421,
     "since": "2026-10-14"
   },
@@ -40,7 +41,7 @@
     "name": "EU AI Act Service Desk FAQ",
     "url": "https://ai-act-service-desk.ec.europa.eu/en/faq",
     "kind": "regulation",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 17123,
     "since": "2026-10-14"
   },
@@ -49,7 +50,7 @@
     "name": "Figma Terms of Service",
     "url": "https://www.figma.com/legal/tos/",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 36498,
     "since": "2026-10-14"
   },
@@ -58,7 +59,7 @@
     "name": "GitHub Terms of Service",
     "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 46231,
     "since": "2026-10-14"
   },
@@ -67,7 +68,7 @@
     "name": "Google Terms of Service",
     "url": "https://policies.google.com/terms?hl=en",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 30214,
     "since": "2026-10-14"
   },
@@ -76,7 +77,7 @@
     "name": "Slack User Terms of Service",
     "url": "https://slack.com/terms-of-service/user",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 13222,
     "since": "2026-10-14"
   },
@@ -85,7 +86,7 @@
     "name": "Zoom Terms of Service",
     "url": "https://www.zoom.com/en/trust/terms/",
     "kind": "terms",
-    "checked": "2026-10-19",
+    "checked": "2026-10-26",
     "chars": 88038,
     "since": "2026-10-14"
   }
